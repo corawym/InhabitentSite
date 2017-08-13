@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.site-footer{
+	background-image: url("../../images/footer-dark-wood.png");
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+
+  h4{
+    color: $color_primary_orange;
+    margin: 4rem 0 0 0;
+    letter-spacing: .1rem;
+  }
+
+  p{
+    color: white;
+    margin: 1rem 0;
+  }
+
+  .text-strong{
+    font-weight: 700;
+  }
+
+  fa{
+    font-size: 1.3rem;
+  }
+}
+
+.site-info{
+  display: flex;
+  margin-bottom: 4rem;
+
+  .footer-contact-info, .footer-business-hour{
+    flex-basis: 25%;
+  }
+  .footer-logo{
+    flex-basis: 50%;
+  }
+}
+
+.footer-logo{
+  display: flex;
+  justify-content: flex-end;
+
+  img{
+    margin-top: 4rem;
+    width: 280px;
+    height: auto;
+  }
+}
+
+.footer-copyright{
+  text-align: center;
+  p {
+    font-family: $font_accent;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+

@@ -468,11 +468,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248A83; }
   a:visited {
-    color: purple; }
+    color: #248A83; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #2f1339; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -483,7 +483,8 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%; }
+  width: 100%;
+  height: 50px; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -513,6 +514,46 @@ a {
   .main-navigation a {
     display: block;
     text-decoration: none; }
+
+.site-header {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid #e1e1e1; }
+
+.site-main-menu {
+  display: -ms-flexbox;
+  display: flex; }
+  .site-main-menu .header-logo {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center; }
+  .site-main-menu .main-navigation {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
+
+.menu-main-menu-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+  .menu-main-menu-container li {
+    margin-left: 30px; }
+    .menu-main-menu-container li a {
+      color: #248A83;
+      font: 1rem "Novecento Sans Web", sans-serif;
+      text-transform: uppercase; }
+      .menu-main-menu-container li a:hover, .menu-main-menu-container li a:focus, .menu-main-menu-container li a:active {
+        color: #2f1339; }
+
+.header-logo-img {
+  width: 50px;
+  height: auto; }
 
 /* Small menu. */
 .menu-toggle,

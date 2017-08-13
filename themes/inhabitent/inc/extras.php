@@ -21,6 +21,13 @@ function inhabitent_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'inhabitent_body_classes' );
 
+// Remove "Editor" links from sub-menus
+function inhabitent_remove_submenus() {
+    remove_submenu_page( 'themes.php', 'theme-editor.php' );
+    remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
+}
+add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
+
 /**
  * Custom functions that change the login page logo.
  */

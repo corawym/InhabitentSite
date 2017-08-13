@@ -1,6 +1,8 @@
 // Structure
-
 $base__space-unit: 1.5rem;
+
+$solid_border: 1px solid #e1e1e1;
+$dashed_border: 1px dashed #c8c8c8;
 
 // Colors
 
@@ -15,9 +17,9 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
+$color__link: #248A83;
+$color__link-visited: #248A83;
+$color__link-hover: #2f1339;
 
 $color_primary_green: #248A83;
 $color_primary_orange: #d99054;
@@ -36,4 +38,7 @@ $font__line-height-body: 1.75;
 $font__line-height-pre: 1.6;
 
 $font_accent: 'Novecento Sans Web', sans-serif;
+
+
+
 

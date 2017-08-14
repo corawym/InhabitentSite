@@ -2,6 +2,10 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+body{
+  margin: 0 auto;
+  max-width: 100%;
+}
 .container-full-width{
   max-width: 100%;
   margin: 0 auto;
@@ -9,8 +13,9 @@
 
 .container-max-width{
   max-width: 1120px;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin: 0 auto;
 }
 
 
@@ -20,8 +25,9 @@
   .site-content{
     display: flex;
     max-width: 1120px;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin: 0 auto;
     .content-area{
       flex-basis: 67%;
       margin-right: 2rem;
@@ -56,19 +62,43 @@
 
 
 /* Journal page */
-// .blog .site-main header {
-//   position: relative;
-//   img{
-//     width: 100%;
-//   }
-//   .entry-title {
-//     position: absolute;
-//     left: 0;
-//     top: 10px;
-//     background-color: $color_primary_green;
-//   }
-//   .entry-meta{
-
-//   }
-//   }
-// }
+.blog .site-main article {
+  width: 100%;
+  margin-bottom: 100px;
+  .entry-header{
+    position: relative;
+    img{
+      width: 100%;
+      height: auto;
+    }
+    .entry-title {
+      position: absolute;
+      left: 0;
+      top: 8px;
+      background-color: $color_primary_green;
+      width: 570px;
+      padding: 15px 25px;
+      line-height: 40px;
+      a{
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
+    .entry-meta{
+      position: absolute;
+      bottom: 8px;
+      right: 0;
+      background-color: $color_primary_green;
+      color: white;
+      font-family: $font_accent;
+      padding: 5px 15px;
+      span{
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+// 

@@ -760,6 +760,23 @@ object {
 body {
   margin: 0 auto;
   max-width: 100%; }
+  body:not(.home):not(.page-template-about) .site-content {
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1120px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin: 0 auto; }
+    body:not(.home):not(.page-template-about) .site-content .content-area {
+      -ms-flex-preferred-size: 67%;
+          flex-basis: 67%;
+      margin-right: 2rem;
+      margin-top: 4rem; }
+    body:not(.home):not(.page-template-about) .site-content .widget-area {
+      -ms-flex-preferred-size: 33%;
+          flex-basis: 33%;
+      padding-left: 2rem;
+      border-left: 1px solid #e1e1e1; }
 
 .container-full-width {
   max-width: 100%;
@@ -770,24 +787,6 @@ body {
   padding-left: 4rem;
   padding-right: 4rem;
   margin: 0 auto; }
-
-.blog .site-content {
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 1120px;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  margin: 0 auto; }
-  .blog .site-content .content-area {
-    -ms-flex-preferred-size: 67%;
-        flex-basis: 67%;
-    margin-right: 2rem;
-    margin-top: 4rem; }
-  .blog .site-content .widget-area {
-    -ms-flex-preferred-size: 33%;
-        flex-basis: 33%;
-    padding-left: 2rem;
-    border-left: 1px solid #e1e1e1; }
 
 .widget-title {
   font-size: 1.8rem;
@@ -806,15 +805,15 @@ body {
 
 /* Front page */
 /* Journal page */
-.blog .site-main article {
+.blog .site-main article, .post {
   width: 100%;
   margin-bottom: 100px; }
-  .blog .site-main article .entry-header {
+  .blog .site-main article .entry-header, .post .entry-header {
     position: relative; }
-    .blog .site-main article .entry-header img {
+    .blog .site-main article .entry-header img, .post .entry-header img {
       width: 100%;
       height: auto; }
-    .blog .site-main article .entry-header .entry-title {
+    .blog .site-main article .entry-header .entry-title, .post .entry-header .entry-title {
       position: absolute;
       left: 0;
       top: 8px;
@@ -822,22 +821,43 @@ body {
       width: 570px;
       padding: 15px 25px;
       line-height: 40px; }
-      .blog .site-main article .entry-header .entry-title a {
+      .blog .site-main article .entry-header .entry-title a, .post .entry-header .entry-title a {
         color: white;
         font-size: 2rem;
         font-weight: 700;
         text-decoration: none; }
-    .blog .site-main article .entry-header .entry-meta {
+        .blog .site-main article .entry-header .entry-title a:hover, .post .entry-header .entry-title a:hover {
+          color: #f0e4d1; }
+    .blog .site-main article .entry-header h1, .post .entry-header h1 {
+      color: white;
+      font-size: 2rem;
+      font-weight: 700; }
+    .blog .site-main article .entry-header .entry-meta, .post .entry-header .entry-meta {
       position: absolute;
       bottom: 8px;
       right: 0;
       background-color: #248A83;
       color: white;
       font-family: "Novecento Sans Web", sans-serif;
-      padding: 5px 15px; }
-      .blog .site-main article .entry-header .entry-meta span {
+      padding: 5px 15px;
+      text-transform: uppercase; }
+      .blog .site-main article .entry-header .entry-meta span, .post .entry-header .entry-meta span {
         margin-bottom: 0;
         padding-bottom: 0; }
+      .blog .site-main article .entry-header .entry-meta .comments-link a, .post .entry-header .entry-meta .comments-link a {
+        color: white;
+        font-family: "Novecento Sans Web", sans-serif;
+        text-decoration: none;
+        text-transform: uppercase; }
+        .blog .site-main article .entry-header .entry-meta .comments-link a:hover, .post .entry-header .entry-meta .comments-link a:hover {
+          color: #f0e4d1; }
+  .blog .site-main article .entry-footer, .post .entry-footer {
+    font-family: "Novecento Sans Web", sans-serif;
+    text-transform: uppercase; }
+    .blog .site-main article .entry-footer span, .post .entry-footer span {
+      margin-right: 20px; }
+      .blog .site-main article .entry-footer span a, .post .entry-footer span a {
+        text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Footer

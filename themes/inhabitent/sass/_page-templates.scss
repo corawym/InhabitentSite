@@ -5,6 +5,25 @@
 body{
   margin: 0 auto;
   max-width: 100%;
+  &:not(.home):not(.page-template-about){
+    .site-content{
+      display: flex;
+      max-width: 1120px;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      margin: 0 auto;
+      .content-area{
+        flex-basis: 67%;
+        margin-right: 2rem;
+        margin-top: 4rem;
+      }
+      .widget-area{
+        flex-basis: 33%;
+        padding-left: 2rem;
+        border-left: $solid_border;
+      }
+    }
+  }
 }
 .container-full-width{
   max-width: 100%;
@@ -18,28 +37,6 @@ body{
   margin: 0 auto;
 }
 
-
-
-.blog{
-
-  .site-content{
-    display: flex;
-    max-width: 1120px;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    margin: 0 auto;
-    .content-area{
-      flex-basis: 67%;
-      margin-right: 2rem;
-      margin-top: 4rem;
-    }
-    .widget-area{
-      flex-basis: 33%;
-      padding-left: 2rem;
-      border-left: $solid_border;
-    }
-  }
-}
 
 .widget-title{
   font-size: 1.8rem;
@@ -62,7 +59,7 @@ body{
 
 
 /* Journal page */
-.blog .site-main article {
+.blog .site-main article, .post {
   width: 100%;
   margin-bottom: 100px;
   .entry-header{
@@ -84,7 +81,15 @@ body{
         font-size: 2rem;
         font-weight: 700;
         text-decoration: none;
+        &:hover{
+          color: $color_primary_yellow;
+        }
       }
+    }
+    h1{ //single post style
+      color: white;
+      font-size: 2rem;
+      font-weight: 700;
     }
     .entry-meta{
       position: absolute;
@@ -94,9 +99,29 @@ body{
       color: white;
       font-family: $font_accent;
       padding: 5px 15px;
+      text-transform: uppercase;
       span{
         margin-bottom: 0;
         padding-bottom: 0;
+      }
+      .comments-link a{ //single post style
+        color: white;
+        font-family: $font_accent;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover{
+          color: $color_primary_yellow;
+        }
+      }
+    }
+  }
+  .entry-footer{ 
+    font-family: $font_accent;
+    text-transform: uppercase;
+    span{
+      margin-right: 20px;
+      a{
+        text-decoration: none;
       }
     }
   }

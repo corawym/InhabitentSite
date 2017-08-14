@@ -819,7 +819,7 @@ body {
     text-decoration: none; }
 
 /* Front page */
-/* About page */
+/* Find us page */
 .page .content-area {
   margin-top: 2.1rem !important; }
   .page .content-area .entry-header h1 {
@@ -830,6 +830,7 @@ body {
     line-height: 2.6rem;
     margin-top: 50px; }
 
+/* About page */
 /* Journal page */
 .blog .site-main article, .post {
   width: 100%;

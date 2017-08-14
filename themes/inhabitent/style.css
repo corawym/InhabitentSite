@@ -408,32 +408,19 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
+  background: #248A83;
+  color: white;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .6rem 1rem;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 0; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+    background: #19625d; }
 
 /* Fields */
 input[type="text"],
@@ -442,9 +429,9 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  border: 1px solid #e1e1e1;
+  background-color: #f4f4f4;
+  width: 100%; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -463,6 +450,34 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+label {
+  font-family: "Novecento Sans Web", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 10px; }
+
+.comment-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px; }
+  .comment-form .comment-form-comment, .comment-form .comment-form-url {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 15px 0; }
+  .comment-form .comment-form-author {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding-right: 10px;
+    margin: 15px 0; }
+  .comment-form .comment-form-email {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding-left: 10px;
+    margin: 15px 0; }
 
 /*--------------------------------------------------------------
 # Navigation

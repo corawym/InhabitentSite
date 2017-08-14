@@ -59,5 +59,8 @@ function inhabitent_cpt_product() {
 	);
 	register_post_type( 'product', $args );
 
+	// Clear Permalinks
+	flush_rewrite_rules();
+
 }
 add_action( 'init', 'inhabitent_cpt_product', 0 );

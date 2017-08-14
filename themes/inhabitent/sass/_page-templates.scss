@@ -13,4 +13,62 @@
   margin-right: 4rem;
 }
 
+
+
+.blog{
+
+  .site-content{
+    display: flex;
+    max-width: 1120px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    .content-area{
+      flex-basis: 67%;
+      margin-right: 2rem;
+      margin-top: 4rem;
+    }
+    .widget-area{
+      flex-basis: 33%;
+      padding-left: 2rem;
+      border-left: $solid_border;
+    }
+  }
+}
+
+.widget-title{
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 4rem;
+}
+.textwidget p{
+  margin: 1rem 0;
+}
+.widget_archive ul{
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  a{
+    text-decoration: none;
+  }
+}
+
 /* Front page */
+
+
+/* Journal page */
+// .blog .site-main header {
+//   position: relative;
+//   img{
+//     width: 100%;
+//   }
+//   .entry-title {
+//     position: absolute;
+//     left: 0;
+//     top: 10px;
+//     background-color: $color_primary_green;
+//   }
+//   .entry-meta{
+
+//   }
+//   }
+// }

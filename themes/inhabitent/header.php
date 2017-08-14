@@ -27,7 +27,7 @@
 				</div><!-- .site-branding -->
 				<div class="site-main-menu container-max-width">
 					<div class="header-logo">
-						<a href="#"><img class="header-logo-img" src="./wp-content/themes/inhabitent/images/inhabitent-logo-tent.svg" alt="Inhabitent logo"></a>
+						<a href= <?php echo home_url() ?> ><img class="header-logo-img" src="./wp-content/themes/inhabitent/images/inhabitent-logo-tent.svg" alt="Inhabitent logo"></a>
 					</div>
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">

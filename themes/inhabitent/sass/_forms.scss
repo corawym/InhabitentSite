@@ -16,6 +16,7 @@ input[type="submit"] {
 	text-transform: uppercase;
 	font-size: 1rem;
 	border: 0;
+	margin-bottom: 40px;
 
 	&:hover {
 		background: darken($color_primary_green, 10%);
@@ -68,7 +69,7 @@ label{
 .comment-form{
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 40px;
+
 	.comment-form-comment, .comment-form-url{
 		flex-basis: 100%;
 		margin: 15px 0;

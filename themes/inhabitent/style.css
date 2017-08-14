@@ -415,7 +415,8 @@ input[type="submit"] {
   font-family: "Novecento Sans Web", sans-serif;
   text-transform: uppercase;
   font-size: 1rem;
-  border: 0; }
+  border: 0;
+  margin-bottom: 40px; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -462,8 +463,7 @@ label {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 40px; }
+      flex-wrap: wrap; }
   .comment-form .comment-form-comment, .comment-form .comment-form-url {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -819,6 +819,17 @@ body {
     text-decoration: none; }
 
 /* Front page */
+/* About page */
+.page .content-area {
+  margin-top: 2.1rem !important; }
+  .page .content-area .entry-header h1 {
+    margin: 0;
+    padding: 0; }
+  .page .content-area .entry-content h2 {
+    font-weight: 700;
+    line-height: 2.6rem;
+    margin-top: 50px; }
+
 /* Journal page */
 .blog .site-main article, .post {
   width: 100%;
@@ -843,10 +854,6 @@ body {
         text-decoration: none; }
         .blog .site-main article .entry-header .entry-title a:hover, .post .entry-header .entry-title a:hover {
           color: #f0e4d1; }
-    .blog .site-main article .entry-header h1, .post .entry-header h1 {
-      color: white;
-      font-size: 2rem;
-      font-weight: 700; }
     .blog .site-main article .entry-header .entry-meta, .post .entry-header .entry-meta {
       position: absolute;
       bottom: 8px;
@@ -859,20 +866,30 @@ body {
       .blog .site-main article .entry-header .entry-meta span, .post .entry-header .entry-meta span {
         margin-bottom: 0;
         padding-bottom: 0; }
-      .blog .site-main article .entry-header .entry-meta .comments-link a, .post .entry-header .entry-meta .comments-link a {
-        color: white;
-        font-family: "Novecento Sans Web", sans-serif;
-        text-decoration: none;
-        text-transform: uppercase; }
-        .blog .site-main article .entry-header .entry-meta .comments-link a:hover, .post .entry-header .entry-meta .comments-link a:hover {
-          color: #f0e4d1; }
-  .blog .site-main article .entry-footer, .post .entry-footer {
-    font-family: "Novecento Sans Web", sans-serif;
-    text-transform: uppercase; }
-    .blog .site-main article .entry-footer span, .post .entry-footer span {
-      margin-right: 20px; }
-      .blog .site-main article .entry-footer span a, .post .entry-footer span a {
-        text-decoration: none; }
+
+/* single blog post page */
+.single .entry-header h1 {
+  position: absolute;
+  top: 40px !important;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700; }
+
+.single .entry-meta .comments-link a {
+  color: white;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .single .entry-meta .comments-link a:hover {
+    color: #f0e4d1; }
+
+.single .entry-footer {
+  font-family: "Novecento Sans Web", sans-serif;
+  text-transform: uppercase; }
+  .single .entry-footer span {
+    margin-right: 20px; }
+    .single .entry-footer span a {
+      text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Footer

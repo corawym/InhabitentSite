@@ -58,6 +58,29 @@ body{
 /* Front page */
 
 
+
+/* About page */
+.page{
+  .content-area{
+    margin-top: 2.1rem !important;
+    .entry-header{
+      h1{
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .entry-content{
+      h2{
+        font-weight: 700;
+        line-height: 2.6rem;
+        margin-top: 50px;
+      }
+    }
+  }
+
+}
+
+
 /* Journal page */
 .blog .site-main article, .post {
   width: 100%;
@@ -86,11 +109,7 @@ body{
         }
       }
     }
-    h1{ //single post style
-      color: white;
-      font-size: 2rem;
-      font-weight: 700;
-    }
+    
     .entry-meta{
       position: absolute;
       bottom: 8px;
@@ -104,14 +123,29 @@ body{
         margin-bottom: 0;
         padding-bottom: 0;
       }
-      .comments-link a{ //single post style
-        color: white;
-        font-family: $font_accent;
-        text-decoration: none;
-        text-transform: uppercase;
-        &:hover{
-          color: $color_primary_yellow;
-        }
+      
+    }
+  }
+  
+}
+
+/* single blog post page */
+.single{
+  .entry-header h1{ 
+    position: absolute;
+    top: 40px !important;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .entry-meta{
+    .comments-link a{ 
+      color: white;
+      font-family: $font_accent;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:hover{
+        color: $color_primary_yellow;
       }
     }
   }
@@ -126,4 +160,3 @@ body{
     }
   }
 }
-// 

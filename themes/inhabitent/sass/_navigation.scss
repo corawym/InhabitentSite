@@ -109,9 +109,10 @@ a {
 		align-items: center;
 		.header-logo{
 			flex-basis: 50%;
-			img{
-				width: 50px;
-			}
+			width: 50px;
+			background: url('../../images/inhabitent-logo-tent.svg') no-repeat;
+			background-size: 50px 33px;
+			height: 33px;
 		}
 		.main-navigation{
 			flex-basis: 50%;

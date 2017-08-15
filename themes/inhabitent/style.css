@@ -545,9 +545,11 @@ a {
         align-items: center; }
     .site-header .container .header-logo {
       -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; }
-      .site-header .container .header-logo img {
-        width: 50px; }
+          flex-basis: 50%;
+      width: 50px;
+      background: url("../../images/inhabitent-logo-tent.svg") no-repeat;
+      background-size: 50px 33px;
+      height: 33px; }
     .site-header .container .main-navigation {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;

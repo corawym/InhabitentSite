@@ -27,7 +27,7 @@
 						<p class="site-description screen-reader-text"><?php bloginfo( 'description' ); ?></p>
 					</div><!-- .site-branding -->
 					<div class="header-logo">
-						<a href= <?php echo home_url() ?> ><img class="header-logo-img" src="./wp-content/themes/inhabitent/images/inhabitent-logo-tent.svg" alt="Inhabitent logo"></a>
+						<a href= <?php echo home_url() ?>></a>
 					</div>
 					
 					<nav id="site-navigation" class="main-navigation" role="navigation">

@@ -484,7 +484,9 @@ label {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #248A83; }
+  color: #248A83;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-transform: uppercase; }
   a:visited {
     color: #248A83; }
   a:hover, a:focus, a:active {
@@ -499,8 +501,7 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%;
-  height: 50px; }
+  width: 100%; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -534,42 +535,28 @@ a {
 .site-header {
   background-color: rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid #e1e1e1; }
-
-.site-main-menu {
-  display: -ms-flexbox;
-  display: flex; }
-  .site-main-menu .header-logo {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+  .site-header .container {
+    height: 50px;
+    width: 1120px;
+    margin: 0 auto;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-item-align: center;
-        align-self: center; }
-  .site-main-menu .main-navigation {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: end;
-        justify-content: flex-end; }
-
-.menu-main-menu-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center; }
-  .menu-main-menu-container li {
-    margin-left: 30px; }
-    .menu-main-menu-container li a {
-      color: #248A83;
-      font: 1rem "Novecento Sans Web", sans-serif;
-      text-transform: uppercase; }
-      .menu-main-menu-container li a:hover, .menu-main-menu-container li a:focus, .menu-main-menu-container li a:active {
-        color: #2f1339; }
-
-.header-logo-img {
-  width: 50px;
-  height: auto; }
+    -ms-flex-align: center;
+        align-items: center; }
+    .site-header .container .header-logo {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
+      .site-header .container .header-logo img {
+        width: 50px; }
+    .site-header .container .main-navigation {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+      .site-header .container .main-navigation li {
+        margin-left: 30px; }
 
 /* Small menu. */
 .menu-toggle,
@@ -804,6 +791,7 @@ body:not(.home):not(.page-template-about):not(.single-product) .site-content {
   margin-left: auto;
   margin-right: auto; }
 
+/* Front page */
 .journals-blocks {
   display: -ms-flexbox;
   display: flex; }
@@ -813,8 +801,6 @@ body:not(.home):not(.page-template-about):not(.single-product) .site-content {
     .journals-blocks .journals-blocks-wrapper .journals-blocks-thumbnail {
       width: 375px;
       height: 250px; }
-      .journals-blocks .journals-blocks-wrapper .journals-blocks-thumbnail img {
-        width: 100%; }
 
 /*--------------------------------------------------------------
 # Footer

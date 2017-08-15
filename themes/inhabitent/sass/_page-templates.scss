@@ -40,6 +40,8 @@ body{
     margin-right: auto;
   }
 }
+
+/* Front page */
 .journals-blocks{
   display: flex;
   .journals-blocks-wrapper{
@@ -47,9 +49,6 @@ body{
     .journals-blocks-thumbnail{
       width: 375px;
       height: 250px;
-      img{
-        width: 100%;
-      }
      
     }
   }

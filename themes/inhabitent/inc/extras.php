@@ -82,4 +82,3 @@ function inhabitent_dynamic_css() {
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_dynamic_css' );
 
-

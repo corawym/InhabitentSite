@@ -20,21 +20,21 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header container-full-width" role="banner">
+			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description screen-reader-text"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
-				<div class="site-main-menu container-max-width">
-					<div class="header-logo">
-						<a href= <?php echo home_url() ?> ><img class="header-logo-img" src="./wp-content/themes/inhabitent/images/inhabitent-logo-tent.svg" alt="Inhabitent logo"></a>
-					</div>
-
-					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					</nav><!-- #site-navigation -->
+				
+				<div class="header-logo">
+					<a href= <?php echo home_url() ?> ><img class="header-logo-img" src="./wp-content/themes/inhabitent/images/inhabitent-logo-tent.svg" alt="Inhabitent logo"></a>
 				</div>
+				
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</nav><!-- #site-navigation -->
+				
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

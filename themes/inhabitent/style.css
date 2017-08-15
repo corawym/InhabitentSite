@@ -807,43 +807,39 @@ body:not(.home):not(.page-template-about):not(.single-product) .site-content {
 --------------------------------------------------------------*/
 .site-footer {
   background-image: url("../../images/footer-dark-wood.png");
-  margin-bottom: 0;
-  padding-bottom: 2rem; }
-  .site-footer h4 {
-    color: #d99054;
-    margin: 4rem 0 0 0; }
-  .site-footer p {
-    color: white;
-    margin: 1rem 0; }
-  .site-footer .text-strong {
-    font-weight: 700; }
-  .site-footer fa {
-    font-size: 1.3rem; }
-
-.site-info {
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 4rem; }
-  .site-info .footer-contact-info, .site-info .footer-business-hour {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%; }
-  .site-info .footer-logo {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%; }
-
-.footer-logo {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end; }
-  .footer-logo img {
-    margin-top: 4rem;
-    width: 280px;
-    height: auto; }
-
-.footer-copyright {
-  text-align: center; }
-  .footer-copyright p {
-    font-family: "Novecento Sans Web", sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 0; }
+  padding-bottom: 2rem;
+  color: white; }
+  .site-footer .container {
+    width: 1120px;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 4rem; }
+    .site-footer .container .footer-contact-info, .site-footer .container .footer-business-hour {
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%; }
+      .site-footer .container .footer-contact-info h4, .site-footer .container .footer-business-hour h4 {
+        color: #d99054;
+        margin: 4rem 0 0 0; }
+      .site-footer .container .footer-contact-info p, .site-footer .container .footer-business-hour p {
+        margin: 1rem 0; }
+      .site-footer .container .footer-contact-info .fa, .site-footer .container .footer-business-hour .fa {
+        font-size: 1.3rem; }
+      .site-footer .container .footer-contact-info .text-strong, .site-footer .container .footer-business-hour .text-strong {
+        font-weight: 700; }
+    .site-footer .container .footer-logo {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+      .site-footer .container .footer-logo img {
+        margin-top: 4.1rem;
+        width: 280px; }
+  .site-footer .footer-copyright {
+    text-align: center; }
+    .site-footer .footer-copyright p {
+      font-family: "Novecento Sans Web", sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 0; }

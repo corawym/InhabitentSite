@@ -10,7 +10,7 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="container-max-width site-info">
+				<div class="container site-info">
 					<!--<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>-->
 					<div class="footer-contact-info">
 						<h4>Contact Info</h4>

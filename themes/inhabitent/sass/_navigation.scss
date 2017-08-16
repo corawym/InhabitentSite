@@ -100,8 +100,11 @@ a {
 
 // inhabitent main menu 
 .site-header{
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 255, 255, 1);
 	border-bottom: $solid_border;
+	position: fixed;
+	width: 100%;
+	z-index: 3;
 	.container{
 		height: 50px;
 		width: 1120px;

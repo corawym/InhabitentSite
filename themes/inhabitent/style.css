@@ -693,8 +693,11 @@ a {
   list-style: none;
   padding-left: 0;
   margin-left: 0; }
-  .widget_archive ul a {
-    text-decoration: none; }
+  .widget_archive ul li {
+    margin: 1rem 0; }
+    .widget_archive ul li a {
+      text-decoration: none;
+      font-family: "Merriweather", serif; }
 
 /* Search widget. */
 .widget_search .search-submit {

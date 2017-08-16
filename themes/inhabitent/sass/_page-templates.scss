@@ -14,21 +14,20 @@ body{
       .content-area{
         flex-basis: 67%;
         padding: 60px 50px 60px 0;
-
       }
       .widget-area{ // sidebar
         flex-basis: 33%;
         padding-top: 20px;
         padding-left: 40px;
         border-left: $solid_border;
-
       }
-    }  
-  }
-}
 
-/* Journal page */
-.blog{
+    } // end of .site-content 
+  }
+} // end of body
+
+/* Journal page and Singal post page */
+.blog, .single-post{
   .post{
     margin-bottom: 80px;
     .entry-header{
@@ -53,6 +52,11 @@ body{
             color: $color_primary_yellow;
           }
         }
+        &:not(.blog){
+          color: white;
+          font-size: 2rem;
+          font-weight: 700;
+        }
       }
       .entry-meta{
         position: absolute;
@@ -67,11 +71,21 @@ body{
           color: white;
           font-family: $font_accent;
           text-transform: uppercase;
-        }
-        
-      }
-    }
+          &:not(.blog){
+            a{
+              color: white;
+              font-family: $font_accent;
+              text-transform: uppercase;
+              &:hover{
+                color: $color_primary_yellow;
+              }
+            }
+          }
+        }  
+      } // end of .entry-meta
+    } // end of .entry-header
     .entry-content{
+      margin-top: 40px;
       p{
         margin-bottom: 40px;
       }
@@ -81,44 +95,25 @@ body{
           color: white;
         }
       }
+    } // end of .entry-content
+  } // end of .post
+} // end of .blog, .single-post
+
+/* Singal post page */
+.single-post{
+  .post{
+    .entry-footer{
+      font-family: $font_accent;
+      text-transform: uppercase;
+      span{
+        margin-right: 20px;
+      }
+
     }
   }
-}
+} // end of .single-post
 
 
-
-
-// /* single blog post page */
-// .single{
-//   .entry-header h1{ 
-//     position: absolute;
-//     top: 40px !important;
-//     color: white;
-//     font-size: 2rem;
-//     font-weight: 700;
-//   }
-//   .entry-meta{
-//     .comments-link a{ 
-//       color: white;
-//       font-family: $font_accent;
-//       text-decoration: none;
-//       text-transform: uppercase;
-//       &:hover{
-//         color: $color_primary_yellow;
-//       }
-//     }
-//   }
-//   .entry-footer{ 
-//     font-family: $font_accent;
-//     text-transform: uppercase;
-//     span{
-//       margin-right: 20px;
-//       a{
-//         text-decoration: none;
-//       }
-//     }
-//   }
-// }
 
 
 /* About page */

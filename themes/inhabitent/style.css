@@ -411,7 +411,7 @@ input[type="submit"],
 .btn-green {
   background: #248A83;
   color: white;
-  padding: 15px 20px;
+  padding: 12px 25px;
   font-family: "Novecento Sans Web", sans-serif;
   text-transform: uppercase;
   font-size: 1rem;
@@ -424,7 +424,7 @@ input[type="submit"],
     background: #19625d; }
 
 .btn-black-border {
-  padding: 15px 20px;
+  padding: 12px 25px;
   font-family: "Novecento Sans Web", sans-serif;
   text-transform: uppercase;
   font-size: 1rem;
@@ -811,15 +811,15 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
     padding-left: 40px;
     border-left: 1px solid #e1e1e1; }
 
-/* Journal page */
-.blog .post {
+/* Journal page and Singal post page */
+.blog .post, .single-post .post {
   margin-bottom: 80px; }
-  .blog .post .entry-header {
+  .blog .post .entry-header, .single-post .post .entry-header {
     position: relative; }
-    .blog .post .entry-header img {
+    .blog .post .entry-header img, .single-post .post .entry-header img {
       width: 100%;
       display: block; }
-    .blog .post .entry-header .entry-title {
+    .blog .post .entry-header .entry-title, .single-post .post .entry-header .entry-title {
       position: absolute;
       left: 0;
       top: 8px;
@@ -827,13 +827,17 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
       width: 570px;
       padding: 15px 25px;
       line-height: 40px; }
-      .blog .post .entry-header .entry-title a {
+      .blog .post .entry-header .entry-title a, .single-post .post .entry-header .entry-title a {
         color: white;
         font-size: 2rem;
         font-weight: 700; }
-        .blog .post .entry-header .entry-title a:hover {
+        .blog .post .entry-header .entry-title a:hover, .single-post .post .entry-header .entry-title a:hover {
           color: #f0e4d1; }
-    .blog .post .entry-header .entry-meta {
+      .blog .post .entry-header .entry-title:not(.blog), .single-post .post .entry-header .entry-title:not(.blog) {
+        color: white;
+        font-size: 2rem;
+        font-weight: 700; }
+    .blog .post .entry-header .entry-meta, .single-post .post .entry-header .entry-meta {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -842,16 +846,31 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
       color: white;
       font-family: "Novecento Sans Web", sans-serif;
       text-transform: uppercase; }
-      .blog .post .entry-header .entry-meta span {
+      .blog .post .entry-header .entry-meta span, .single-post .post .entry-header .entry-meta span {
         color: white;
         font-family: "Novecento Sans Web", sans-serif;
         text-transform: uppercase; }
-  .blog .post .entry-content p {
-    margin-bottom: 40px; }
-  .blog .post .entry-content a.btn-black-border {
-    color: black; }
-    .blog .post .entry-content a.btn-black-border:hover {
-      color: white; }
+        .blog .post .entry-header .entry-meta span:not(.blog) a, .single-post .post .entry-header .entry-meta span:not(.blog) a {
+          color: white;
+          font-family: "Novecento Sans Web", sans-serif;
+          text-transform: uppercase; }
+          .blog .post .entry-header .entry-meta span:not(.blog) a:hover, .single-post .post .entry-header .entry-meta span:not(.blog) a:hover {
+            color: #f0e4d1; }
+  .blog .post .entry-content, .single-post .post .entry-content {
+    margin-top: 40px; }
+    .blog .post .entry-content p, .single-post .post .entry-content p {
+      margin-bottom: 40px; }
+    .blog .post .entry-content a.btn-black-border, .single-post .post .entry-content a.btn-black-border {
+      color: black; }
+      .blog .post .entry-content a.btn-black-border:hover, .single-post .post .entry-content a.btn-black-border:hover {
+        color: white; }
+
+/* Singal post page */
+.single-post .post .entry-footer {
+  font-family: "Novecento Sans Web", sans-serif;
+  text-transform: uppercase; }
+  .single-post .post .entry-footer span {
+    margin-right: 20px; }
 
 /* About page */
 .page-template-about .custom-hero {

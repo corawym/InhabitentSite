@@ -543,13 +543,11 @@ a {
     display: flex;
     -ms-flex-align: center;
         align-items: center; }
-    .site-header .container .header-logo {
+    .site-header .container .site-branding {
       -ms-flex-preferred-size: 50%;
-          flex-basis: 50%;
-      width: 50px;
-      background: url("../../images/inhabitent-logo-tent.svg") no-repeat;
-      background-size: 50px 33px;
-      height: 33px; }
+          flex-basis: 50%; }
+      .site-header .container .site-branding .header-logo .logo {
+        width: 50px; }
     .site-header .container .main-navigation {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;

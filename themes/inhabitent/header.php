@@ -25,10 +25,12 @@
 					<div class="site-branding">
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<p class="site-description screen-reader-text"><?php bloginfo( 'description' ); ?></p>
+						<div class="header-logo"> 
+							<a href= <?php echo home_url() ?>><img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/inhabitent-logo-tent.svg" alt="Inhabitent logo"/></a>
+						</div>
+
 					</div><!-- .site-branding -->
-					<div class="header-logo">
-						<a href= <?php echo home_url() ?>></a>
-					</div>
+
 					
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>

@@ -29,7 +29,7 @@
 						<p><span class="text-strong">Sunday:</span> Closed</p>
 					</div>
 					<div class="footer-logo">
-						<a href="#"><img src="./wp-content/themes/inhabitent/images/inhabitent-logo-text.svg" alt="Inhabitent logo"/></a>
+						<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/inhabitent-logo-text.svg" alt="Inhabitent logo"/></a>
 					</div>
 				</div><!-- .site-info -->
 				<div class="footer-copyright">

@@ -151,10 +151,16 @@ body{
   }
   .entry-content{
     width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 80px auto;
+    h2{
+      font-weight: 700;
+      font-size: 2.1rem;
+      line-height: 2.5rem;
+      margin-top: 50px;
+      text-align: center;
+    }
   }
-}
+} // end of .page-template-about
 
 /* Front page */
 .home{
@@ -172,34 +178,4 @@ body{
   
 
 
-
-
-
-
-
-
-// /* Find us page */
-// .page{
-//   .content-area{
-//     margin-top: 2.1rem !important;
-//     .entry-header{
-//       h1{
-//         margin: 0;
-//         padding: 0;
-//       }
-//     }
-//     .entry-content{
-//       h2{
-//         font-weight: 700;
-//         line-height: 2.6rem;
-//         margin-top: 50px;
-//       }
-//     }
-//   }
-// }
-
-// /* About page */
-// .page-template-about{
-
-// }
 

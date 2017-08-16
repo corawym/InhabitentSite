@@ -8,6 +8,7 @@ a {
 	color: $color__link;
 	font-family: $font_accent;
 	text-transform: uppercase;
+	text-decoration: none;
 
 	&:visited {
 		color: $color__link-visited;

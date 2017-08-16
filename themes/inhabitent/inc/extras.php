@@ -82,3 +82,9 @@ function inhabitent_dynamic_css() {
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_dynamic_css' );
 
+// Replaces the excerpt "Read More" text by a link
+function new_excerpt_more($more) {
+       global $post;
+	return '<span>[...]</span><p><a class="moretag btn-black-border" href="'. get_permalink($post->ID) . '"> Read more &#8594; </a></p>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');

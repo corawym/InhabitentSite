@@ -407,21 +407,33 @@ table {
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+.btn-green {
   background: #248A83;
   color: white;
-  line-height: 1;
-  padding: .6rem 1rem;
+  padding: 15px 20px;
   font-family: "Novecento Sans Web", sans-serif;
   text-transform: uppercase;
   font-size: 1rem;
-  border: 0;
-  margin-bottom: 40px; }
+  border: 0; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
-  input[type="submit"]:hover {
+  input[type="submit"]:hover,
+  .btn-green:hover {
     background: #19625d; }
+
+.btn-black-border {
+  padding: 15px 20px;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 1px solid black;
+  color: black; }
+  .btn-black-border:hover {
+    border: 0;
+    background: #248A83;
+    color: white; }
 
 /* Fields */
 input[type="text"],
@@ -486,7 +498,8 @@ label {
 a {
   color: #248A83;
   font-family: "Novecento Sans Web", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none; }
   a:visited {
     color: #248A83; }
   a:hover, a:focus, a:active {
@@ -817,8 +830,7 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
       .blog .post .entry-header .entry-title a {
         color: white;
         font-size: 2rem;
-        font-weight: 700;
-        text-decoration: none; }
+        font-weight: 700; }
         .blog .post .entry-header .entry-title a:hover {
           color: #f0e4d1; }
     .blog .post .entry-header .entry-meta {
@@ -834,6 +846,12 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
         color: white;
         font-family: "Novecento Sans Web", sans-serif;
         text-transform: uppercase; }
+  .blog .post .entry-content p {
+    margin-bottom: 40px; }
+  .blog .post .entry-content a.btn-black-border {
+    color: black; }
+    .blog .post .entry-content a.btn-black-border:hover {
+      color: white; }
 
 /* About page */
 .page-template-about .custom-hero {

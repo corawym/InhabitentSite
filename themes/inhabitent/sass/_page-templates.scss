@@ -4,24 +4,35 @@
 
 body{
 
-  // for .blog, .single-post .page .error404
-  &:not(.home):not(.page-template-about):not(.single-product) {
+  // for .blog, .single-post .page .error404, .search-results
+  &:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type) {
     .site-content{
       display: flex;
       width: 1120px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto;
+
       .content-area{
-        padding: 40px 40px 0 40px;
-        flex-basis: 70%;
+        flex-basis: 67%;
+        padding: 60px 50px 60px 0;
+
       }
-      .widget-area{
-        flex-basis: 30%;
+      .widget-area{ // sidebar
+        flex-basis: 33%;
+        padding-top: 20px;
+        padding-left: 40px;
+        border-left: $solid_border;
+
       }
-    }
-    
+    }  
   }
 }
+
+/* journal page */
+.blog{
+
+}
+
+/* about page */
 .page-template-about{
   .custom-hero{
     height:100vh;
@@ -42,17 +53,19 @@ body{
 }
 
 /* Front page */
-.journals-blocks{
-  display: flex;
-  .journals-blocks-wrapper{
-    flex-basis: 33.33%;
-    .journals-blocks-thumbnail{
-      width: 375px;
-      height: 250px;
-     
+.home{
+  .journals-blocks{
+    display: flex;
+    .journals-blocks-wrapper{
+      flex-basis: 33.33%;
+      .journals-blocks-thumbnail{
+        width: 375px;
+        height: 250px;  
+      }
     }
   }
 }
+  
 
 
 // body{
@@ -91,22 +104,6 @@ body{
 // }
 
 
-// .widget-title{
-//   font-size: 1.8rem;
-//   font-weight: 700;
-//   margin-top: 4rem;
-// }
-// .textwidget p{
-//   margin: 1rem 0;
-// }
-// .widget_archive ul{
-//   list-style: none;
-//   padding-left: 0;
-//   margin-left: 0;
-//   a{
-//     text-decoration: none;
-//   }
-// }
 
 // /* Front page */
 

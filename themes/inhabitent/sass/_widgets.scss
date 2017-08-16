@@ -24,6 +24,11 @@
 			align-items: baseline;
 			.widget-contact-info{
 				margin-left: 15px;
+				a{
+					text-decoration: none;
+					font-family: $font__main;
+					text-transform: lowercase;
+				}
 			}
 			.day-of-week{
 				font-weight: 700;

@@ -686,6 +686,10 @@ a {
         align-items: baseline; }
     .widget .textwidget p .widget-contact-info {
       margin-left: 15px; }
+      .widget .textwidget p .widget-contact-info a {
+        text-decoration: none;
+        font-family: "Merriweather", serif;
+        text-transform: lowercase; }
     .widget .textwidget p .day-of-week {
       font-weight: 700; }
 

@@ -27,12 +27,91 @@ body{
   }
 }
 
-/* journal page */
+/* Journal page */
 .blog{
-
+  .post{
+    margin-bottom: 80px;
+    .entry-header{
+      position: relative;
+      img{
+        width: 100%;
+        display: block;
+      }
+      .entry-title{
+        position: absolute;
+        left: 0;
+        top: 8px;
+        background-color: $color_primary_green;
+        width: 570px;
+        padding: 15px 25px;
+        line-height: 40px;
+        a{
+          color: white;
+          font-size: 2rem;
+          font-weight: 700;
+          text-decoration: none;
+          &:hover{
+            color: $color_primary_yellow;
+          }
+        }
+      }
+      .entry-meta{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: $color_primary_green;
+        padding: 5px 15px;
+        color: white;
+        font-family: $font_accent;
+        text-transform: uppercase;
+        span{
+          color: white;
+          font-family: $font_accent;
+          text-transform: uppercase;
+        }
+        
+      }
+    }
+  }
 }
 
-/* about page */
+
+
+
+// /* single blog post page */
+// .single{
+//   .entry-header h1{ 
+//     position: absolute;
+//     top: 40px !important;
+//     color: white;
+//     font-size: 2rem;
+//     font-weight: 700;
+//   }
+//   .entry-meta{
+//     .comments-link a{ 
+//       color: white;
+//       font-family: $font_accent;
+//       text-decoration: none;
+//       text-transform: uppercase;
+//       &:hover{
+//         color: $color_primary_yellow;
+//       }
+//     }
+//   }
+//   .entry-footer{ 
+//     font-family: $font_accent;
+//     text-transform: uppercase;
+//     span{
+//       margin-right: 20px;
+//       a{
+//         text-decoration: none;
+//       }
+//     }
+//   }
+// }
+
+
+/* About page */
 .page-template-about{
   .custom-hero{
     height:100vh;
@@ -68,44 +147,9 @@ body{
   
 
 
-// body{
-//   margin: 0 auto;
-//   max-width: 100%;
-//   &:not(.home):not(.page-template-about){
-//     .site-content{
-//       display: flex;
-//       max-width: 1120px;
-//       padding-left: 4rem;
-//       padding-right: 4rem;
-//       margin: 0 auto;
-//       .content-area{
-//         flex-basis: 67%;
-//         margin-right: 2rem;
-//         margin-top: 4rem;
-//       }
-//       .widget-area{
-//         flex-basis: 33%;
-//         padding-left: 2rem;
-//         border-left: $solid_border;
-//       }
-//     }
-//   }
-// }
-// .container-full-width{
-//   max-width: 100%;
-//   margin: 0 auto;
-// }
-
-// .container-max-width{
-//   max-width: 1120px;
-//   padding-left: 4rem;
-//   padding-right: 4rem;
-//   margin: 0 auto;
-// }
 
 
 
-// /* Front page */
 
 
 
@@ -134,82 +178,3 @@ body{
 
 // }
 
-// /* Journal page */
-// .blog .site-main article, .post {
-//   width: 100%;
-//   margin-bottom: 100px;
-//   .entry-header{
-//     position: relative;
-//     img{
-//       width: 100%;
-//       height: auto;
-//     }
-//     .entry-title {
-//       position: absolute;
-//       left: 0;
-//       top: 8px;
-//       background-color: $color_primary_green;
-//       width: 570px;
-//       padding: 15px 25px;
-//       line-height: 40px;
-//       a{
-//         color: white;
-//         font-size: 2rem;
-//         font-weight: 700;
-//         text-decoration: none;
-//         &:hover{
-//           color: $color_primary_yellow;
-//         }
-//       }
-//     }
-    
-//     .entry-meta{
-//       position: absolute;
-//       bottom: 8px;
-//       right: 0;
-//       background-color: $color_primary_green;
-//       color: white;
-//       font-family: $font_accent;
-//       padding: 5px 15px;
-//       text-transform: uppercase;
-//       span{
-//         margin-bottom: 0;
-//         padding-bottom: 0;
-//       }
-      
-//     }
-//   }
-  
-// }
-
-// /* single blog post page */
-// .single{
-//   .entry-header h1{ 
-//     position: absolute;
-//     top: 40px !important;
-//     color: white;
-//     font-size: 2rem;
-//     font-weight: 700;
-//   }
-//   .entry-meta{
-//     .comments-link a{ 
-//       color: white;
-//       font-family: $font_accent;
-//       text-decoration: none;
-//       text-transform: uppercase;
-//       &:hover{
-//         color: $color_primary_yellow;
-//       }
-//     }
-//   }
-//   .entry-footer{ 
-//     font-family: $font_accent;
-//     text-transform: uppercase;
-//     span{
-//       margin-right: 20px;
-//       a{
-//         text-decoration: none;
-//       }
-//     }
-//   }
-// }

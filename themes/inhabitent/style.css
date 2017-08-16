@@ -798,8 +798,44 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
     padding-left: 40px;
     border-left: 1px solid #e1e1e1; }
 
-/* journal page */
-/* about page */
+/* Journal page */
+.blog .post {
+  margin-bottom: 80px; }
+  .blog .post .entry-header {
+    position: relative; }
+    .blog .post .entry-header img {
+      width: 100%;
+      display: block; }
+    .blog .post .entry-header .entry-title {
+      position: absolute;
+      left: 0;
+      top: 8px;
+      background-color: #248A83;
+      width: 570px;
+      padding: 15px 25px;
+      line-height: 40px; }
+      .blog .post .entry-header .entry-title a {
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none; }
+        .blog .post .entry-header .entry-title a:hover {
+          color: #f0e4d1; }
+    .blog .post .entry-header .entry-meta {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #248A83;
+      padding: 5px 15px;
+      color: white;
+      font-family: "Novecento Sans Web", sans-serif;
+      text-transform: uppercase; }
+      .blog .post .entry-header .entry-meta span {
+        color: white;
+        font-family: "Novecento Sans Web", sans-serif;
+        text-transform: uppercase; }
+
+/* About page */
 .page-template-about .custom-hero {
   height: 100vh;
   width: 100vw;

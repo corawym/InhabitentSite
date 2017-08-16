@@ -872,6 +872,16 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
   .single-post .post .entry-footer span {
     margin-right: 20px; }
 
+/* Find us page */
+.page .site-main .type-page .entry-header h1 {
+  margin: 0; }
+
+.page .site-main .type-page .entry-content h2 {
+  font-weight: 700;
+  font-size: 2.1rem;
+  line-height: 2.5rem;
+  margin-top: 50px; }
+
 /* About page */
 .page-template-about .custom-hero {
   height: 100vh;

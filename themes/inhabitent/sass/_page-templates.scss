@@ -26,6 +26,7 @@ body{
   }
 } // end of body
 
+
 /* Journal page and Singal post page */
 .blog, .single-post{
   .post{
@@ -108,12 +109,31 @@ body{
       span{
         margin-right: 20px;
       }
-
     }
   }
 } // end of .single-post
 
 
+/* Find us page */
+.page{
+  .site-main{
+    .type-page{
+      .entry-header{
+        h1{
+          margin: 0;
+        }
+      }
+      .entry-content{
+        h2{
+          font-weight: 700;
+          font-size: 2.1rem;
+          line-height: 2.5rem;
+          margin-top: 50px;
+        }
+      }
+    }
+  } // end of .site-main
+} // end of .page
 
 
 /* About page */

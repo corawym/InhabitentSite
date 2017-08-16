@@ -88,3 +88,13 @@ function new_excerpt_more($more) {
 	return '<span>[...]</span><p><a class="moretag btn-black-border" href="'. get_permalink($post->ID) . '"> Read more &#8594; </a></p>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+
+// 
+function inhabitent_limit_archive_posts($query){
+	if ($query->is_archive) {
+		$query->set('posts_per_page', 20);
+	}
+    return $query;
+}
+add_filter('pre_get_posts', 'inhabitent_limit_archive_posts');

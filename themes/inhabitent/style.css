@@ -355,6 +355,9 @@ html {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   box-sizing: inherit; }
 
+* {
+  box-sizing: border-box; }
+
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
@@ -798,21 +801,23 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type) .site-content {
-  display: -ms-flexbox;
-  display: flex;
+body:not(.home):not(.page-template-about) .site-content {
   width: 1120px;
-  margin: 0 auto; }
-  body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type) .site-content .content-area {
-    -ms-flex-preferred-size: 67%;
-        flex-basis: 67%;
-    padding: 60px 50px 60px 0; }
-  body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type) .site-content .widget-area {
-    -ms-flex-preferred-size: 33%;
-        flex-basis: 33%;
-    padding-top: 20px;
-    padding-left: 40px;
-    border-left: 1px solid #e1e1e1; }
+  margin: 0 auto;
+  padding-top: 50px; }
+  body:not(.home):not(.page-template-about) .site-content:not(.single-product):not(.post-type-archive):not(.tax-product-type) {
+    display: -ms-flexbox;
+    display: flex; }
+    body:not(.home):not(.page-template-about) .site-content:not(.single-product):not(.post-type-archive):not(.tax-product-type) .content-area {
+      -ms-flex-preferred-size: 67%;
+          flex-basis: 67%;
+      padding: 60px 50px 60px 0; }
+    body:not(.home):not(.page-template-about) .site-content:not(.single-product):not(.post-type-archive):not(.tax-product-type) .widget-area {
+      -ms-flex-preferred-size: 33%;
+          flex-basis: 33%;
+      padding-top: 20px;
+      padding-left: 40px;
+      border-left: 1px solid #e1e1e1; }
 
 /* Journal page and Singal post page */
 .blog .post, .single-post .post {
@@ -910,15 +915,103 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
     text-align: center; }
 
 /* Front page */
-.home .journals-blocks {
-  display: -ms-flexbox;
-  display: flex; }
-  .home .journals-blocks .journals-blocks-wrapper {
-    -ms-flex-preferred-size: 33.33%;
-        flex-basis: 33.33%; }
-    .home .journals-blocks .journals-blocks-wrapper .journals-blocks-thumbnail {
-      width: 375px;
-      height: 250px; }
+.home .site-content {
+  width: 100%;
+  margin: 0 auto; }
+  .home .site-content .front-page-hero {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../../images/front-page-hero.jpg") no-repeat top/100%; }
+  .home .site-content .front-page-shop,
+  .home .site-content .front-page-latest-journals,
+  .home .site-content .front-page-adventures {
+    width: 1120px;
+    margin: 80px auto; }
+    .home .site-content .front-page-shop h2,
+    .home .site-content .front-page-latest-journals h2,
+    .home .site-content .front-page-adventures h2 {
+      text-align: center; }
+    .home .site-content .front-page-shop .shop-blocks,
+    .home .site-content .front-page-latest-journals .shop-blocks,
+    .home .site-content .front-page-adventures .shop-blocks {
+      display: -ms-flexbox;
+      display: flex; }
+      .home .site-content .front-page-shop .shop-blocks .shop-blocks-wrapper,
+      .home .site-content .front-page-latest-journals .shop-blocks .shop-blocks-wrapper,
+      .home .site-content .front-page-adventures .shop-blocks .shop-blocks-wrapper {
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+        border: 1px solid #e1e1e1;
+        border-top-width: 5px;
+        padding: 15px;
+        text-align: center; }
+        .home .site-content .front-page-shop .shop-blocks .shop-blocks-wrapper:hover,
+        .home .site-content .front-page-latest-journals .shop-blocks .shop-blocks-wrapper:hover,
+        .home .site-content .front-page-adventures .shop-blocks .shop-blocks-wrapper:hover {
+          border-color: #d99054; }
+        .home .site-content .front-page-shop .shop-blocks .shop-blocks-wrapper:not(:last-of-type),
+        .home .site-content .front-page-latest-journals .shop-blocks .shop-blocks-wrapper:not(:last-of-type),
+        .home .site-content .front-page-adventures .shop-blocks .shop-blocks-wrapper:not(:last-of-type) {
+          margin-right: 15px; }
+        .home .site-content .front-page-shop .shop-blocks .shop-blocks-wrapper img,
+        .home .site-content .front-page-latest-journals .shop-blocks .shop-blocks-wrapper img,
+        .home .site-content .front-page-adventures .shop-blocks .shop-blocks-wrapper img {
+          width: 70px;
+          height: 70px;
+          display: block;
+          margin: 30px auto; }
+        .home .site-content .front-page-shop .shop-blocks .shop-blocks-wrapper a,
+        .home .site-content .front-page-latest-journals .shop-blocks .shop-blocks-wrapper a,
+        .home .site-content .front-page-adventures .shop-blocks .shop-blocks-wrapper a {
+          color: white; }
+    .home .site-content .front-page-shop .journals-blocks,
+    .home .site-content .front-page-latest-journals .journals-blocks,
+    .home .site-content .front-page-adventures .journals-blocks {
+      display: -ms-flexbox;
+      display: flex; }
+      .home .site-content .front-page-shop .journals-blocks .journals-blocks-wrapper,
+      .home .site-content .front-page-latest-journals .journals-blocks .journals-blocks-wrapper,
+      .home .site-content .front-page-adventures .journals-blocks .journals-blocks-wrapper {
+        -ms-flex-preferred-size: 33.33%;
+            flex-basis: 33.33%;
+        border: 1px solid #e1e1e1; }
+        .home .site-content .front-page-shop .journals-blocks .journals-blocks-wrapper:not(:last-of-type),
+        .home .site-content .front-page-latest-journals .journals-blocks .journals-blocks-wrapper:not(:last-of-type),
+        .home .site-content .front-page-adventures .journals-blocks .journals-blocks-wrapper:not(:last-of-type) {
+          margin-right: 15px; }
+        .home .site-content .front-page-shop .journals-blocks .journals-blocks-wrapper .journals-blocks-thumbnail,
+        .home .site-content .front-page-latest-journals .journals-blocks .journals-blocks-wrapper .journals-blocks-thumbnail,
+        .home .site-content .front-page-adventures .journals-blocks .journals-blocks-wrapper .journals-blocks-thumbnail {
+          width: 100%;
+          height: 250px;
+          border: 1px solid #e1e1e1;
+          border-bottom-width: 5px;
+          overflow: hidden; }
+          .home .site-content .front-page-shop .journals-blocks .journals-blocks-wrapper .journals-blocks-thumbnail img,
+          .home .site-content .front-page-latest-journals .journals-blocks .journals-blocks-wrapper .journals-blocks-thumbnail img,
+          .home .site-content .front-page-adventures .journals-blocks .journals-blocks-wrapper .journals-blocks-thumbnail img {
+            height: auto;
+            min-height: 100%;
+            width: auto;
+            min-width: 100%; }
+        .home .site-content .front-page-shop .journals-blocks .journals-blocks-wrapper .journals-blocks-info,
+        .home .site-content .front-page-latest-journals .journals-blocks .journals-blocks-wrapper .journals-blocks-info,
+        .home .site-content .front-page-adventures .journals-blocks .journals-blocks-wrapper .journals-blocks-info {
+          padding: 30px 20px;
+          font-size: 0.75rem;
+          background-color: white; }
+          .home .site-content .front-page-shop .journals-blocks .journals-blocks-wrapper .journals-blocks-info h3,
+          .home .site-content .front-page-latest-journals .journals-blocks .journals-blocks-wrapper .journals-blocks-info h3,
+          .home .site-content .front-page-adventures .journals-blocks .journals-blocks-wrapper .journals-blocks-info h3 {
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+            margin-top: 15px;
+            margin-bottom: 30px; }
 
 /*--------------------------------------------------------------
 # Footer

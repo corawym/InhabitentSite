@@ -816,17 +816,18 @@ body:not(.home):not(.page-template-about) .site-content {
     display: -ms-flexbox;
     display: flex; }
     body:not(.home):not(.page-template-about) .site-content:not(.single-product):not(.post-type-archive):not(.tax-product-type) .content-area {
-      -ms-flex-preferred-size: 67%;
-          flex-basis: 67%;
+      -ms-flex-preferred-size: 70%;
+          flex-basis: 70%;
       padding: 60px 50px 60px 0; }
     body:not(.home):not(.page-template-about) .site-content:not(.single-product):not(.post-type-archive):not(.tax-product-type) .widget-area {
-      -ms-flex-preferred-size: 33%;
-          flex-basis: 33%;
+      -ms-flex-preferred-size: 30%;
+          flex-basis: 30%;
       padding-top: 20px;
-      padding-left: 40px;
+      padding-left: 60px;
       border-left: 1px solid #e1e1e1; }
 
-/* Journal page and Singal post page */
+/* Journal page and Singal post page, 
+also Category page, Tag page, Month archives page - post style*/
 .blog .post, .single-post .post, .archive .post {
   margin-bottom: 80px; }
   .blog .post .entry-header, .single-post .post .entry-header, .archive .post .entry-header {
@@ -880,9 +881,14 @@ body:not(.home):not(.page-template-about) .site-content {
       .blog .post .entry-content a.btn-black-border:hover, .single-post .post .entry-content a.btn-black-border:hover, .archive .post .entry-content a.btn-black-border:hover {
         color: white; }
 
-/* Category, tag, month archives page */
-.archive .entry-header h1 {
-  margin: 0; }
+/* Category page, Tag page, Month archives page - page header style*/
+.archive .site-main .page-header {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 50px; }
+  .archive .site-main .page-header h1 {
+    margin: 0;
+    margin-bottom: 40px;
+    line-height: 2.3rem; }
 
 /* Singal post page */
 .single-post .post .entry-footer {
@@ -893,7 +899,9 @@ body:not(.home):not(.page-template-about) .site-content {
 
 /* Find us page */
 .page .site-main .type-page .entry-header h1 {
-  margin: 0; }
+  margin-top: 0;
+  margin-bottom: 50px;
+  line-height: 2.3rem; }
 
 .page .site-main .type-page .entry-content h2 {
   font-weight: 700;

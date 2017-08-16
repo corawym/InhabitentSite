@@ -32,7 +32,7 @@ body{
 
 
 /* Journal page and Singal post page */
-.blog, .single-post{
+.blog, .single-post, .archive{
   .post{
     margin-bottom: 80px;
     .entry-header{
@@ -103,6 +103,17 @@ body{
     } // end of .entry-content
   } // end of .post
 } // end of .blog, .single-post
+
+
+/* Category, tag, month archives page */
+.archive{
+  .entry-header{
+    h1{
+      margin: 0;
+    }
+  }
+}
+
 
 /* Singal post page */
 .single-post{
@@ -259,6 +270,8 @@ body{
   } // end of .site-content
 } // end of .home
   
+/* Shop page */
+.post-type-archive-product{
 
-
+}
 

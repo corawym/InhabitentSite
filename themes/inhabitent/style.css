@@ -820,14 +820,14 @@ body:not(.home):not(.page-template-about) .site-content {
       border-left: 1px solid #e1e1e1; }
 
 /* Journal page and Singal post page */
-.blog .post, .single-post .post {
+.blog .post, .single-post .post, .archive .post {
   margin-bottom: 80px; }
-  .blog .post .entry-header, .single-post .post .entry-header {
+  .blog .post .entry-header, .single-post .post .entry-header, .archive .post .entry-header {
     position: relative; }
-    .blog .post .entry-header img, .single-post .post .entry-header img {
+    .blog .post .entry-header img, .single-post .post .entry-header img, .archive .post .entry-header img {
       width: 100%;
       display: block; }
-    .blog .post .entry-header .entry-title, .single-post .post .entry-header .entry-title {
+    .blog .post .entry-header .entry-title, .single-post .post .entry-header .entry-title, .archive .post .entry-header .entry-title {
       position: absolute;
       left: 0;
       top: 8px;
@@ -835,17 +835,17 @@ body:not(.home):not(.page-template-about) .site-content {
       width: 570px;
       padding: 15px 25px;
       line-height: 40px; }
-      .blog .post .entry-header .entry-title a, .single-post .post .entry-header .entry-title a {
+      .blog .post .entry-header .entry-title a, .single-post .post .entry-header .entry-title a, .archive .post .entry-header .entry-title a {
         color: white;
         font-size: 2rem;
         font-weight: 700; }
-        .blog .post .entry-header .entry-title a:hover, .single-post .post .entry-header .entry-title a:hover {
+        .blog .post .entry-header .entry-title a:hover, .single-post .post .entry-header .entry-title a:hover, .archive .post .entry-header .entry-title a:hover {
           color: #f0e4d1; }
-      .blog .post .entry-header .entry-title:not(.blog), .single-post .post .entry-header .entry-title:not(.blog) {
+      .blog .post .entry-header .entry-title:not(.blog), .single-post .post .entry-header .entry-title:not(.blog), .archive .post .entry-header .entry-title:not(.blog) {
         color: white;
         font-size: 2rem;
         font-weight: 700; }
-    .blog .post .entry-header .entry-meta, .single-post .post .entry-header .entry-meta {
+    .blog .post .entry-header .entry-meta, .single-post .post .entry-header .entry-meta, .archive .post .entry-header .entry-meta {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -854,24 +854,28 @@ body:not(.home):not(.page-template-about) .site-content {
       color: white;
       font-family: "Novecento Sans Web", sans-serif;
       text-transform: uppercase; }
-      .blog .post .entry-header .entry-meta span, .single-post .post .entry-header .entry-meta span {
+      .blog .post .entry-header .entry-meta span, .single-post .post .entry-header .entry-meta span, .archive .post .entry-header .entry-meta span {
         color: white;
         font-family: "Novecento Sans Web", sans-serif;
         text-transform: uppercase; }
-        .blog .post .entry-header .entry-meta span:not(.blog) a, .single-post .post .entry-header .entry-meta span:not(.blog) a {
+        .blog .post .entry-header .entry-meta span:not(.blog) a, .single-post .post .entry-header .entry-meta span:not(.blog) a, .archive .post .entry-header .entry-meta span:not(.blog) a {
           color: white;
           font-family: "Novecento Sans Web", sans-serif;
           text-transform: uppercase; }
-          .blog .post .entry-header .entry-meta span:not(.blog) a:hover, .single-post .post .entry-header .entry-meta span:not(.blog) a:hover {
+          .blog .post .entry-header .entry-meta span:not(.blog) a:hover, .single-post .post .entry-header .entry-meta span:not(.blog) a:hover, .archive .post .entry-header .entry-meta span:not(.blog) a:hover {
             color: #f0e4d1; }
-  .blog .post .entry-content, .single-post .post .entry-content {
+  .blog .post .entry-content, .single-post .post .entry-content, .archive .post .entry-content {
     margin-top: 40px; }
-    .blog .post .entry-content p, .single-post .post .entry-content p {
+    .blog .post .entry-content p, .single-post .post .entry-content p, .archive .post .entry-content p {
       margin-bottom: 40px; }
-    .blog .post .entry-content a.btn-black-border, .single-post .post .entry-content a.btn-black-border {
+    .blog .post .entry-content a.btn-black-border, .single-post .post .entry-content a.btn-black-border, .archive .post .entry-content a.btn-black-border {
       color: black; }
-      .blog .post .entry-content a.btn-black-border:hover, .single-post .post .entry-content a.btn-black-border:hover {
+      .blog .post .entry-content a.btn-black-border:hover, .single-post .post .entry-content a.btn-black-border:hover, .archive .post .entry-content a.btn-black-border:hover {
         color: white; }
+
+/* Category, tag, month archives page */
+.archive .entry-header h1 {
+  margin: 0; }
 
 /* Singal post page */
 .single-post .post .entry-footer {
@@ -1013,6 +1017,7 @@ body:not(.home):not(.page-template-about) .site-content {
             margin-top: 15px;
             margin-bottom: 30px; }
 
+/* Shop page */
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

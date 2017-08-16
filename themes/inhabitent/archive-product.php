@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying single product pages.
+ * The shop page.
  *
  * @package Inhabitent_Theme
  */

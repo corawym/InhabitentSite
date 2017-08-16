@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The front page.
  *
  * @package Inhabitent_Theme
  */
@@ -16,7 +16,7 @@ get_header(); ?>
       <section class="front-page-shop">
         <h2>Shop Stuff</h2>
         <div class="shop-blocks">
-          
+
         </div>
       </section><!-- .front-page-shop -->
 

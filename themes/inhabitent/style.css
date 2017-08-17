@@ -417,8 +417,7 @@ input[type="submit"],
   padding: 12px 25px;
   font-family: "Novecento Sans Web", sans-serif;
   text-transform: uppercase;
-  font-size: 1rem;
-  border: 0; }
+  font-size: 1rem; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -1081,14 +1080,35 @@ also Category page, Tag page, Month archives page - post style*/
         font-family: "Merriweather", serif; }
 
 .single-product article {
-  display: -ms-flexbox;
-  display: flex; }
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px; }
   .single-product article .single-product-image {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%; }
-  .single-product article .single-product-content {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%; }
+    width: 100%; }
+  .single-product article .single-product-content .entry-header h1 {
+    color: #d99054;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 3rem; }
+  .single-product article .single-product-content .entry-content {
+    margin-top: 0; }
+    .single-product article .single-product-content .entry-content .single-product-price {
+      font-family: "Novecento Sans Web", sans-serif;
+      font-size: 1.8rem;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+
+.single-product .social-button, .single-post .social-button {
+  margin-top: 50px; }
+  .single-product .social-button button, .single-post .social-button button {
+    background-color: white;
+    height: 45px;
+    padding-top: 9px;
+    margin-right: 10px; }
+    .single-product .social-button button:hover, .single-post .social-button button:hover {
+      background-color: #248A83; }
 
 /*--------------------------------------------------------------
 # Footer

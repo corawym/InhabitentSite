@@ -26,13 +26,11 @@ get_header(); ?>
           ?>
 
           <?php foreach ( $all_product_types as $product_type ) : setup_postdata( $product_type ); ?>
-          
-          <div class="shop-blocks-wrapper">
-            <img src=<?php echo get_stylesheet_directory_uri() . '/images/product-type-icons/' . strtolower($product_type->name) . '.svg'; ?> alt=<?php echo $product_type->name; ?>>
-            <p><?php echo $product_type->description; ?></p>
-            <p><a class="btn-green" href="product/ "><?php echo $product_type->name?> Stuff</a></p>
-          </div>
-
+            <div class="shop-blocks-wrapper">
+              <img src=<?php echo get_stylesheet_directory_uri() . '/images/product-type-icons/' . strtolower($product_type->name) . '.svg'; ?> alt=<?php echo $product_type->name; ?>>
+              <p><?php echo $product_type->description; ?></p>
+              <p><a class="btn-green" href=<?php echo home_url() . '/product-type/' . $product_type->slug; ?>><?php echo $product_type->name?> Stuff</a></p>
+            </div>
           <?php endforeach; wp_reset_postdata(); ?>
           
         </div><!-- .shop-blocks -->

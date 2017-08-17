@@ -342,13 +342,44 @@ also Category page, Tag page, Month archives page - post style*/
 // Single product page style
 .single-product{
   article{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
     .single-product-image{
-      flex-basis: 50%;
+      width: 100%;
     }
     .single-product-content{
-      flex-basis: 50%;
+      .entry-header h1{
+        color: $color_primary_orange;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 3rem;
+      }
+      .entry-content{
+        margin-top: 0;
+        .single-product-price{
+          font-family: $font_accent;
+          font-size: 1.8rem;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }  
+    }
+  } // end of article
+} // end of .single-product
+
+// social button style
+.single-product, .single-post{
+  .social-button{
+    margin-top: 50px;
+    button{
+      background-color: white;
+      height: 45px;
+      padding-top: 9px;
+      margin-right: 10px;
+      &:hover{
+        background-color: $color_primary_green;
+      }
     }
   }
 }
-

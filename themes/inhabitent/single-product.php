@@ -9,38 +9,46 @@ get_header(); ?>
 
   <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
 			<?php while ( have_posts() ) : the_post(); ?>
-				
-				<div class="single-product-image">
-					<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'large' ); ?>
-					<?php endif; ?>
-				</div><!-- .product-image-wrappe -->
 
-				<div class="single-product-content">
-					<header class="entry-header">
-						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-					</header><!-- .entry-header -->
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<div class="single-product-image">
+						<?php if ( has_post_thumbnail() ) : ?>
+							<?php the_post_thumbnail( 'large' ); ?>
+						<?php endif; ?>
+					</div><!-- .single-product-image -->
 
-					<div class="entry-content">
-						<?php
-							wp_link_pages( array(
-								'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-								'after'  => '</div>',
-							) );
-						?>
-						<p class="single-product-price"><?php echo CFS()->get( 'price' ); ?></p>
-						<?php echo the_content('<h2 class="single-product-description">' , '</h2>' ); ?>
-					</div><!-- .entry-content -->
+					<div class="single-product-content">
+						<header class="entry-header">
+							<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+						</header><!-- .entry-header -->
+						<div class="entry-content">
+							<p class="single-product-price"><?php echo CFS()->get( 'price' ); ?></p>
+							<?php echo the_content('<p class="single-product-description">' , '</p>' ); ?>
+						</div><!-- .entry-content -->
 
-				</div><!-- .product-content-wrapper -->
-			
+						<div class="social-button">
+							<button type="button" class="btn-black-border">
+								<i class="fa fa-facebook fa-fw" aria-hidden="true"></i>
+								like
+							</button>
+							<button type="button" class="btn-black-border">
+								<i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+								tweet
+							</button>
+							<button type="button" class="btn-black-border">
+								<i class="fa fa-pinterest fa-fw" aria-hidden="true"></i>
+								pin
+							</button>
+						</div>
+
+					</div><!-- .single-product-content -->
+				</article>
+
 			<?php endwhile; // End of the loop. ?>
 
-			</article>
+			
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

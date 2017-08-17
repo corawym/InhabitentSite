@@ -316,10 +316,9 @@ also Category page, Tag page, Month archives page - post style*/
     .product-grid{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(4, 1fr);
       grid-column-gap: 15px;
-      grid-row-gap: 15px;
       margin-bottom: 30px;
+      grid-row-gap: 15px;
       .product-grid-item{
         border: $solid_border;
         .product-item-thumbnail{
@@ -401,3 +400,5 @@ also Category page, Tag page, Month archives page - post style*/
     }
   }
 }
+
+// Taxonomy product type page

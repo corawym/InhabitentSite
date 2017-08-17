@@ -109,7 +109,9 @@ add_filter( 'pre_get_posts', 'inhabitent_limit_archive_posts' );
 function modify_archive_title($title) {
     if ( is_post_type_archive('product') ) {
         $title = 'Shop Stuff';
-	}
+    }elseif ( is_post_type_archive('product-type') ) {
+       $title = preg_replace ( 'Product Type: ', '', $title );
+    }
 	return $title;
 }
 add_filter( 'get_the_archive_title', 'modify_archive_title' );

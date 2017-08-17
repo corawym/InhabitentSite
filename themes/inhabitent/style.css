@@ -1060,11 +1060,9 @@ also Category page, Tag page, Month archives page - post style*/
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 15px;
-  grid-row-gap: 15px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  grid-row-gap: 15px; }
   .post-type-archive-product .site-main .product-grid .product-grid-item, .tax-product-type .site-main .product-grid .product-grid-item {
     border: 1px solid #e1e1e1; }
     .post-type-archive-product .site-main .product-grid .product-grid-item .product-item-thumbnail, .tax-product-type .site-main .product-grid .product-grid-item .product-item-thumbnail {

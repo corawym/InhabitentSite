@@ -169,3 +169,18 @@ a {
 	}
 
 }
+
+.search-pagination{
+	.page-numbers{
+		background-color: $color_primary_green;
+		color: white;
+		padding: 8px 12px;
+		margin-right: 5px;
+		&:hover:not(.current){
+			background-color: $color_primary_purple;
+		}
+	}
+	.current{
+		background-color: $color_primary_medium_grey;
+	}
+}

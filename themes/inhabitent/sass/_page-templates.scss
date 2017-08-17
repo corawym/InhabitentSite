@@ -104,8 +104,8 @@ also Category page, Tag page, Month archives page - post style*/
 } // end of .blog, .single-post
 
 
-/* Category page, Tag page, Month archives page - page header style*/
-.archive{
+/* Category page, Tag page, Month archives page, Search page - page header style*/
+.archive, .search{
   .site-main{
     .page-header{
       border-bottom: $solid_border; 
@@ -116,8 +116,7 @@ also Category page, Tag page, Month archives page - post style*/
         line-height: 2.3rem;
       }
     }
-  }
-  
+  } 
 }
 
 
@@ -448,3 +447,28 @@ also Category page, Tag page, Month archives page - post style*/
     } // end of .error-404
   } // end of .site-main
 } // end of .error404
+
+
+// Search page
+.search{
+  .site-main{
+    article{
+      margin-bottom: 80px;
+      .entry-header h2{
+        line-height: 3rem;
+        margin-bottom: 20px;
+        a{
+          font-weight: 700;
+        }
+      }
+      .entry-summary{
+        margin-top: 20px;
+      }
+      &:last-of-type{
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-bottom: $solid_border;
+      }
+    }
+  }
+}

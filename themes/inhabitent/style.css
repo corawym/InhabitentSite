@@ -606,6 +606,17 @@ a {
   text-align: right;
   width: 50%; }
 
+.search-pagination .page-numbers {
+  background-color: #248A83;
+  color: white;
+  padding: 8px 12px;
+  margin-right: 5px; }
+  .search-pagination .page-numbers:hover:not(.current) {
+    background-color: #2f1339; }
+
+.search-pagination .current {
+  background-color: #808080; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -879,11 +890,11 @@ also Category page, Tag page, Month archives page - post style*/
       .blog .post .entry-content a.btn-black-border:hover, .single-post .post .entry-content a.btn-black-border:hover, .archive .post .entry-content a.btn-black-border:hover {
         color: white; }
 
-/* Category page, Tag page, Month archives page - page header style*/
-.archive .site-main .page-header {
+/* Category page, Tag page, Month archives page, Search page - page header style*/
+.archive .site-main .page-header, .search .site-main .page-header {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 50px; }
-  .archive .site-main .page-header h1 {
+  .archive .site-main .page-header h1, .search .site-main .page-header h1 {
     margin: 0;
     margin-bottom: 40px;
     line-height: 2.3rem; }
@@ -1147,6 +1158,20 @@ also Category page, Tag page, Month archives page - post style*/
   .error404 .site-main .error-404 .page-content .widget ul li a {
     font-family: "Merriweather", serif;
     text-transform: none; }
+
+.search .site-main article {
+  margin-bottom: 80px; }
+  .search .site-main article .entry-header h2 {
+    line-height: 3rem;
+    margin-bottom: 20px; }
+    .search .site-main article .entry-header h2 a {
+      font-weight: 700; }
+  .search .site-main article .entry-summary {
+    margin-top: 20px; }
+  .search .site-main article:last-of-type {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #e1e1e1; }
 
 /*--------------------------------------------------------------
 # Footer

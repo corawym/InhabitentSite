@@ -1121,6 +1121,33 @@ also Category page, Tag page, Month archives page - post style*/
     .single-product .social-button button:hover, .single-post .social-button button:hover {
       background-color: #248A83; }
 
+.error404 .site-main .error-404 .page-header h1 {
+  font-size: 2.3rem;
+  margin-top: 0;
+  margin-bottom: 50px;
+  line-height: 2.3rem; }
+
+.error404 .site-main .error-404 .search-form fieldset {
+  border: none;
+  margin-left: 0;
+  padding-left: 0; }
+  .error404 .site-main .error-404 .search-form fieldset .search-field {
+    width: 200px; }
+
+.error404 .site-main .error-404 .page-content .widget .widgettitle {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-top: 50px; }
+
+.error404 .site-main .error-404 .page-content .widget ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0; }
+  .error404 .site-main .error-404 .page-content .widget ul li a {
+    font-family: "Merriweather", serif;
+    text-transform: none; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

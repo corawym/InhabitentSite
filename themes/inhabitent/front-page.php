@@ -21,7 +21,7 @@ get_header(); ?>
         <div class="shop-blocks">
 
           <?php
-            $args = array( 'post_type' => 'product' );
+            $args = array( 'post_type' => 'product-type' );
             $all_product_types = get_terms( $args ); // returns an array of product types
           ?>
 
@@ -30,7 +30,7 @@ get_header(); ?>
           <div class="shop-blocks-wrapper">
             <img src=<?php echo get_stylesheet_directory_uri() . '/images/product-type-icons/' . strtolower($product_type->name) . '.svg'; ?> alt=<?php echo $product_type->name; ?>>
             <p><?php echo $product_type->description; ?></p>
-            <p><a class="btn-green" href=" "><?php echo $product_type->name?> Stuff</a></p>
+            <p><a class="btn-green" href="product/ "><?php echo $product_type->name?> Stuff</a></p>
           </div>
 
           <?php endforeach; wp_reset_postdata(); ?>

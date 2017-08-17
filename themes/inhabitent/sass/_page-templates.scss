@@ -4,30 +4,28 @@
 
 body{
 
-  &:not(.home):not(.page-template-about) {
+  &:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type) {
     .site-content{
       width: 1120px;
       margin: 0 auto;
       padding-top: 50px;
 
-      // for .blog, .single-post .page .error404, .search-results
-      &:not(.single-product):not(.post-type-archive):not(.tax-product-type){
-        display: flex;
+      display: flex;
 
-        .content-area{
-          flex-basis: 70%;
-          padding: 60px 50px 60px 0;
-        }
-        .widget-area{ // sidebar
-          flex-basis: 30%;
-          padding-top: 20px;
-          padding-left: 60px;
-          border-left: $solid_border;
-        }
+      .content-area{
+        flex-basis: 70%;
+        padding: 60px 50px 60px 0;
       }
-
+      .widget-area{ // sidebar
+        flex-basis: 30%;
+        padding-top: 20px;
+        padding-left: 60px;
+        border-left: $solid_border;
+      }
+    
     } // end of .site-content 
-  }
+  }// for .blog, .single-post .page .error404, .search-results
+      
 } // end of body
 
 
@@ -250,13 +248,11 @@ also Category page, Tag page, Month archives page - post style*/
           .journals-blocks-thumbnail{
             width: 100%;
             height: 250px;  
-            border: $solid_border;
-            border-bottom-width: 5px;
+            border-bottom: 5px solid #e1e1e1;
             overflow: hidden;
             img{
               height: auto;
               min-height: 100%;
-
               width: auto;
               min-width: 100%;
             }
@@ -280,8 +276,79 @@ also Category page, Tag page, Month archives page - post style*/
   } // end of .site-content
 } // end of .home
   
-/* Shop page */
-.post-type-archive-product{
+/* Shop page, Single product page*/
+.post-type-archive-product, .single-product, .tax-product-type{
+  .site-content{
+    width: 1120px;
+    margin: 0 auto;
+    padding-top: 50px;
+    .content-area{
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+}
+// Shop page style
+.post-type-archive-product, .tax-product-type{
+  .site-main{
+    .page-header{
+      text-align: center;
+      border-bottom: $dashed_border;
+    }
+    .product-grid{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+      margin-bottom: 30px;
+      .product-grid-item{
+        border: $solid_border;
+        .product-item-thumbnail{
+          overflow: hidden;
+          height: 250px;
+          border-bottom: 5px solid #e1e1e1;
+          img{
+            height: 250px;
+            width: auto;
+            object-fit: cover;
+          }
+        }
+        .product-item-info{
+          background-color: white;
+          border-top-width: 5px;
+          padding-left: 20px;
+          padding-right: 20px;
+          h2{
+            display:inline-block;
+            font-size: 1rem;
+            font-family: $font__main;
+            text-transform: none;
+            letter-spacing: 0;
+          }
+          .price{
+            display:inline-block;
+            text-align: right;
+            font-size: 1rem;
+            font-family: $font__main;
+          }
+        }
+      }
+    } // end of .product-grid
+  } // end of .site-main
+} // end of .post-type-archive-product
 
+
+// Single product page style
+.single-product{
+  article{
+    display: flex;
+    .single-product-image{
+      flex-basis: 50%;
+    }
+    .single-product-content{
+      flex-basis: 50%;
+    }
+  }
 }
 

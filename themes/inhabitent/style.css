@@ -808,23 +808,22 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-body:not(.home):not(.page-template-about) .site-content {
+body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type) .site-content {
   width: 1120px;
   margin: 0 auto;
-  padding-top: 50px; }
-  body:not(.home):not(.page-template-about) .site-content:not(.single-product):not(.post-type-archive):not(.tax-product-type) {
-    display: -ms-flexbox;
-    display: flex; }
-    body:not(.home):not(.page-template-about) .site-content:not(.single-product):not(.post-type-archive):not(.tax-product-type) .content-area {
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%;
-      padding: 60px 50px 60px 0; }
-    body:not(.home):not(.page-template-about) .site-content:not(.single-product):not(.post-type-archive):not(.tax-product-type) .widget-area {
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%;
-      padding-top: 20px;
-      padding-left: 60px;
-      border-left: 1px solid #e1e1e1; }
+  padding-top: 50px;
+  display: -ms-flexbox;
+  display: flex; }
+  body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type) .site-content .content-area {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    padding: 60px 50px 60px 0; }
+  body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type) .site-content .widget-area {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    padding-top: 20px;
+    padding-left: 60px;
+    border-left: 1px solid #e1e1e1; }
 
 /* Journal page and Singal post page, 
 also Category page, Tag page, Month archives page - post style*/
@@ -1008,8 +1007,7 @@ also Category page, Tag page, Month archives page - post style*/
         .home .site-content .front-page-adventures .journals-blocks .journals-blocks-wrapper .journals-blocks-thumbnail {
           width: 100%;
           height: 250px;
-          border: 1px solid #e1e1e1;
-          border-bottom-width: 5px;
+          border-bottom: 5px solid #e1e1e1;
           overflow: hidden; }
           .home .site-content .front-page-shop .journals-blocks .journals-blocks-wrapper .journals-blocks-thumbnail img,
           .home .site-content .front-page-latest-journals .journals-blocks .journals-blocks-wrapper .journals-blocks-thumbnail img,
@@ -1032,7 +1030,66 @@ also Category page, Tag page, Month archives page - post style*/
             margin-top: 15px;
             margin-bottom: 30px; }
 
-/* Shop page */
+/* Shop page, Single product page*/
+.post-type-archive-product .site-content, .single-product .site-content, .tax-product-type .site-content {
+  width: 1120px;
+  margin: 0 auto;
+  padding-top: 50px; }
+  .post-type-archive-product .site-content .content-area, .single-product .site-content .content-area, .tax-product-type .site-content .content-area {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+
+.post-type-archive-product .site-main .page-header, .tax-product-type .site-main .page-header {
+  text-align: center;
+  border-bottom: 1px dashed #c8c8c8; }
+
+.post-type-archive-product .site-main .product-grid, .tax-product-type .site-main .product-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  margin-bottom: 30px; }
+  .post-type-archive-product .site-main .product-grid .product-grid-item, .tax-product-type .site-main .product-grid .product-grid-item {
+    border: 1px solid #e1e1e1; }
+    .post-type-archive-product .site-main .product-grid .product-grid-item .product-item-thumbnail, .tax-product-type .site-main .product-grid .product-grid-item .product-item-thumbnail {
+      overflow: hidden;
+      height: 250px;
+      border-bottom: 5px solid #e1e1e1; }
+      .post-type-archive-product .site-main .product-grid .product-grid-item .product-item-thumbnail img, .tax-product-type .site-main .product-grid .product-grid-item .product-item-thumbnail img {
+        height: 250px;
+        width: auto;
+        object-fit: cover; }
+    .post-type-archive-product .site-main .product-grid .product-grid-item .product-item-info, .tax-product-type .site-main .product-grid .product-grid-item .product-item-info {
+      background-color: white;
+      border-top-width: 5px;
+      padding-left: 20px;
+      padding-right: 20px; }
+      .post-type-archive-product .site-main .product-grid .product-grid-item .product-item-info h2, .tax-product-type .site-main .product-grid .product-grid-item .product-item-info h2 {
+        display: inline-block;
+        font-size: 1rem;
+        font-family: "Merriweather", serif;
+        text-transform: none;
+        letter-spacing: 0; }
+      .post-type-archive-product .site-main .product-grid .product-grid-item .product-item-info .price, .tax-product-type .site-main .product-grid .product-grid-item .product-item-info .price {
+        display: inline-block;
+        text-align: right;
+        font-size: 1rem;
+        font-family: "Merriweather", serif; }
+
+.single-product article {
+  display: -ms-flexbox;
+  display: flex; }
+  .single-product article .single-product-image {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+  .single-product article .single-product-content {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

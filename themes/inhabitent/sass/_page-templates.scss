@@ -288,12 +288,30 @@ also Category page, Tag page, Month archives page - post style*/
     }
   }
 }
+
 // Shop page style
 .post-type-archive-product, .tax-product-type{
   .site-main{
     .page-header{
       text-align: center;
       border-bottom: $dashed_border;
+      padding-bottom: 20px;
+      ul{
+        list-style: none;
+        padding-left: 0;
+        margin-left: 0;
+        li{
+          display: inline-block;
+        }
+        p{
+          display: inline-block;
+          margin: 10px auto;
+          font-size: 1.2rem;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+      }
+      
     }
     .product-grid{
       display: grid;

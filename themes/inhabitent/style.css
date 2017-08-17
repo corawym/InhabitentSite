@@ -1040,7 +1040,20 @@ also Category page, Tag page, Month archives page - post style*/
 
 .post-type-archive-product .site-main .page-header, .tax-product-type .site-main .page-header {
   text-align: center;
-  border-bottom: 1px dashed #c8c8c8; }
+  border-bottom: 1px dashed #c8c8c8;
+  padding-bottom: 20px; }
+  .post-type-archive-product .site-main .page-header ul, .tax-product-type .site-main .page-header ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0; }
+    .post-type-archive-product .site-main .page-header ul li, .tax-product-type .site-main .page-header ul li {
+      display: inline-block; }
+    .post-type-archive-product .site-main .page-header ul p, .tax-product-type .site-main .page-header ul p {
+      display: inline-block;
+      margin: 10px auto;
+      font-size: 1.2rem;
+      padding-left: 30px;
+      padding-right: 30px; }
 
 .post-type-archive-product .site-main .product-grid, .tax-product-type .site-main .product-grid {
   display: -ms-grid;

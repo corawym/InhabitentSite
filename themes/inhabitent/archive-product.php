@@ -22,9 +22,13 @@ get_header(); ?>
 						the_archive_title( '<h1 class="page-title">','</h1>' );
 						// the_archive_description( '<div class="taxonomy-description">', '</div>' );
 					?>
-					<?php foreach ( $all_product_types as $product_type ) : setup_postdata( $product_type ); ?>
-						<?php echo $product_type->name; ?>
-          <?php endforeach; wp_reset_postdata(); ?>
+					<ul class="product-type-list">
+						<?php foreach ( $all_product_types as $product_type ) : setup_postdata( $product_type ); ?>
+							<li>	
+								<p><a class="product-type-link" href=<?php echo home_url() . '/product-type/' . $product_type->slug; ?>><?php echo $product_type->name; ?></a></p>
+							</li>		
+						<?php endforeach; wp_reset_postdata(); ?>
+					</ul>
 				</header><!-- .page-header -->
 
 				<div class="product-grid">

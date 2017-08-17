@@ -82,7 +82,9 @@ function inhabitent_dynamic_css() {
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_dynamic_css' );
 
-// Replaces the excerpt "Read More" text by a link
+/** 
+ * Replaces the excerpt "Read More" text by a link
+**/
 function new_excerpt_more($more) {
        global $post;
 	return '<span>[...]</span><p><a class="moretag btn-black-border" href="'. get_permalink($post->ID) . '"> Read more &#8594; </a></p>';
@@ -90,11 +92,24 @@ function new_excerpt_more($more) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 
-// 
+/** 
+ * Change the number of display posts
+**/
 function inhabitent_limit_archive_posts($query){
-	if ($query->is_archive) {
-		$query->set('posts_per_page', 20);
+	if ( $query->is_archive ) {
+		$query->set( 'posts_per_page', 20) ;
 	}
     return $query;
 }
-add_filter('pre_get_posts', 'inhabitent_limit_archive_posts');
+add_filter( 'pre_get_posts', 'inhabitent_limit_archive_posts' );
+
+/** 
+ * Change the archive title for shop page
+**/
+function modify_archive_title($title) {
+    if ( is_post_type_archive('product') ) {
+        $title = 'Shop Stuff';
+	}
+	return $title;
+}
+add_filter( 'get_the_archive_title', 'modify_archive_title' );

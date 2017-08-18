@@ -30,9 +30,9 @@ get_header(); ?>
 						<?php endif; ?>
 
 						<div class="product-item-info">
-
-							<?php the_title('<h2 class="entry-title">' , '</h2>' ); ?>
-							<span class="price"><?php echo CFS()->get( 'price' ); ?></span>
+							<div class="line"></div>
+							<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+							<h2 class="price"><?php echo CFS()->get( 'price' ); ?></h2>
 						</div>
 
 					</div><!-- .product-grid-item -->

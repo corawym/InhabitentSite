@@ -14,8 +14,8 @@
 					<!--<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>-->
 					<div class="footer-contact-info">
 						<h4>Contact Info</h4>
-						<p><i class="fa fa-envelope fa-fw" aria-hidden="true"></i> info@inhabitent.com</p>
-						<p><i class="fa fa-phone fa-fw" aria-hidden="true"></i> 778-456-7891</p>
+						<p><i class="fa fa-envelope fa-fw" aria-hidden="true"></i><a href="mailto:info@inhabitent.com" target="_blank"> info@inhabitent.com</a></p>
+						<p><i class="fa fa-phone fa-fw" aria-hidden="true"></i><a href="tel:+17784567891" target="_blank"> 778-456-7891</a></p>
 						<p>
 							<span><i class="fa fa-facebook-square fa-fw" aria-hidden="true"></i></span>
 							<span><i class="fa fa-twitter-square fa-fw" aria-hidden="true"></i></span>

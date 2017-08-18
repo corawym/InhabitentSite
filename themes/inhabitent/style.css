@@ -1223,6 +1223,12 @@ also Category page, Tag page, Month archives page - post style*/
         margin: 4rem 0 0 0; }
       .site-footer .container .footer-contact-info p, .site-footer .container .footer-business-hour p {
         margin: 1rem 0; }
+        .site-footer .container .footer-contact-info p a, .site-footer .container .footer-business-hour p a {
+          font-family: "Merriweather", serif;
+          color: white;
+          text-transform: none; }
+          .site-footer .container .footer-contact-info p a:hover, .site-footer .container .footer-business-hour p a:hover {
+            text-decoration: underline; }
       .site-footer .container .footer-contact-info .fa, .site-footer .container .footer-business-hour .fa {
         font-size: 1.3rem; }
       .site-footer .container .footer-contact-info .text-strong, .site-footer .container .footer-business-hour .text-strong {

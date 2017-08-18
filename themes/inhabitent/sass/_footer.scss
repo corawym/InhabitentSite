@@ -19,6 +19,14 @@
       }
       p{
         margin: 1rem 0;
+        a{
+          font-family: $font__main;
+          color: white;
+          text-transform: none;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
       }
       .fa{
         font-size: 1.3rem;

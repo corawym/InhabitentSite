@@ -1072,6 +1072,10 @@ also Category page, Tag page, Month archives page - post style*/
           height: 70px;
           display: block;
           margin: 30px auto; }
+        .home .site-content .front-page-shop .shop-blocks .shop-blocks-wrapper a,
+        .home .site-content .front-page-latest-journals .shop-blocks .shop-blocks-wrapper a,
+        .home .site-content .front-page-adventures .shop-blocks .shop-blocks-wrapper a {
+          color: white; }
     .home .site-content .front-page-shop .journals-blocks,
     .home .site-content .front-page-latest-journals .journals-blocks,
     .home .site-content .front-page-adventures .journals-blocks {
@@ -1114,6 +1118,14 @@ also Category page, Tag page, Month archives page - post style*/
             line-height: 1.8rem;
             margin-top: 15px;
             margin-bottom: 30px; }
+          .home .site-content .front-page-shop .journals-blocks .journals-blocks-wrapper .journals-blocks-info a,
+          .home .site-content .front-page-latest-journals .journals-blocks .journals-blocks-wrapper .journals-blocks-info a,
+          .home .site-content .front-page-adventures .journals-blocks .journals-blocks-wrapper .journals-blocks-info a {
+            color: black; }
+            .home .site-content .front-page-shop .journals-blocks .journals-blocks-wrapper .journals-blocks-info a:hover,
+            .home .site-content .front-page-latest-journals .journals-blocks .journals-blocks-wrapper .journals-blocks-info a:hover,
+            .home .site-content .front-page-adventures .journals-blocks .journals-blocks-wrapper .journals-blocks-info a:hover {
+              color: white; }
 
 /* Shop page, Single product page*/
 .post-type-archive-product .site-content, .single-product .site-content, .tax-product-type .site-content {

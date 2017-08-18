@@ -221,6 +221,9 @@ also Category page, Tag page, Month archives page - post style*/
             display: block;
             margin: 30px auto;
           }
+          a{
+            color: white;
+          }
         }
       } // end of .shop-blocks
 
@@ -254,6 +257,12 @@ also Category page, Tag page, Month archives page - post style*/
               line-height: 1.8rem;
               margin-top: 15px;
               margin-bottom: 30px;
+            }
+            a{
+              color: black;
+              &:hover{
+                color: white;
+              }
             }
           }
 

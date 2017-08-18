@@ -29,7 +29,7 @@ get_header(); ?>
             <div class="shop-blocks-wrapper">
               <img src=<?php echo get_stylesheet_directory_uri() . '/images/product-type-icons/' . $product_type->slug . '.svg'; ?> alt=<?php echo $product_type->name; ?>>
               <p><?php echo $product_type->description; ?></p>
-              <p><a class="btn-green" href=<?php echo home_url() . '/product-type/' . $product_type->slug; ?>><?php echo $product_type->name?> Stuff</a></p>
+              <p><a class="btn-green" href=<?php echo get_term_link($product_type); ?>><?php echo $product_type->name?> Stuff</a></p>
             </div>
           <?php endforeach; wp_reset_postdata(); ?>
           

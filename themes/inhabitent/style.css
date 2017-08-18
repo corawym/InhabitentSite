@@ -458,7 +458,7 @@ a {
     text-decoration: none; }
 
 .site-header {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid #e1e1e1;
   position: fixed;
   width: 100%;
@@ -475,16 +475,32 @@ a {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; }
       .site-header .container .site-branding .header-logo .logo {
-        width: 50px; }
+        width: 50px;
+        height: 33.25px;
+        background-size: cover;
+        background-image: url("../../images/inhabitent-logo-tent.svg"); }
     .site-header .container .main-navigation {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
-      .site-header .container .main-navigation li {
+          justify-content: flex-end;
+      -ms-flex-align: center;
+          align-items: center; }
+      .site-header .container .main-navigation .menu-main-menu-container li {
         margin-left: 30px; }
+      .site-header .container .main-navigation .header-search {
+        margin-left: 20px; }
+        .site-header .container .main-navigation .header-search fieldset {
+          border: none;
+          margin-top: 4px; }
+          .site-header .container .main-navigation .header-search fieldset label {
+            display: none; }
+          .site-header .container .main-navigation .header-search fieldset button {
+            background-color: transparent;
+            border: none;
+            color: #248A83; }
 
 /* Small menu. */
 .menu-toggle,
@@ -607,6 +623,24 @@ textarea {
   input[type="search"]:focus,
   textarea:focus {
     color: #111; }
+
+input[type="search"]::-webkit-input-placeholder {
+  color: #a1a1a1; }
+
+input[type="search"]:-ms-input-placeholder {
+  color: #a1a1a1; }
+
+input[type="search"]::placeholder {
+  color: #a1a1a1; }
+
+input:focus[type="search"]::-webkit-input-placeholder {
+  color: #cccccc; }
+
+input:focus[type="search"]:-ms-input-placeholder {
+  color: #cccccc; }
+
+input:focus[type="search"]::placeholder {
+  color: #cccccc; }
 
 input[type="text"],
 input[type="email"],
@@ -1175,6 +1209,9 @@ also Category page, Tag page, Month archives page - post style*/
   padding-left: 0; }
   .error404 .site-main .error-404 .search-form fieldset .search-field {
     width: 200px; }
+
+.error404 .site-main .error-404 .search-form button {
+  display: none; }
 
 .error404 .site-main .error-404 .page-content .widget .widgettitle {
   font-weight: 700;

@@ -100,7 +100,7 @@ a {
 
 // inhabitent main menu 
 .site-header{
-	background-color: rgba(255, 255, 255, 1);
+	background-color: rgba(255, 255, 255, 0.9);
 	border-bottom: $solid_border;
 	position: fixed;
 	width: 100%;
@@ -116,19 +116,40 @@ a {
 			.header-logo{
 				.logo{
 					width: 50px;
-				}
+					height: 33.25px;
+					background-size: cover;
+					background-image: url("../../images/inhabitent-logo-tent.svg");
+				}			
 			}
-		}
+		} // end of .site-branding
 		.main-navigation{
 			flex-basis: 50%;
 			display: flex;
 			justify-content: flex-end;
-			li{
-				margin-left: 30px;
+			align-items: center;
+			.menu-main-menu-container{
+				li{
+					margin-left: 30px;
+				}
 			}
-		}
-	}
-}
+			.header-search{
+				margin-left: 20px;
+				fieldset{
+					border: none;
+					margin-top: 4px;
+					label{
+						display: none;
+					}
+					button{
+						background-color: transparent;
+						border: none;
+						color: $color_primary_green;
+					}
+				}	
+			}
+		} // end of .main-navigation
+	} // end of .container
+} // end of .site-header
 
 
 
@@ -144,8 +165,7 @@ a {
 	}
 	.main-navigation ul {
 		display: block;
-	}
-	
+	}	
 }
 
 .comment-navigation,

@@ -65,8 +65,17 @@ textarea {
 
 	&:focus {
 		color: #111;
+
 	}
 }
+
+input[type="search"]::placeholder{
+	color: $color_primary_light_grey;
+}
+input:focus[type="search"]::placeholder{
+	color: lighten($color_primary_light_grey, 17%);
+}
+	
 
 input[type="text"],
 input[type="email"],

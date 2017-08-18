@@ -4,40 +4,49 @@
 
 /* Buttons */
 
-button,
+button.btn-green,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
-.btn-green {
+.btn-green, 
+a.btn-green {
 	background: $color_primary_green;
 	color: white;
 	padding: 12px 25px;
 	font-family: $font_accent;
 	text-transform: uppercase;
 	font-size: 1rem;
-
+	border: 1px solid $color_primary_green;
 	&:hover {
 		background: darken($color_primary_green, 10%);
+		border: 1px solid darken($color_primary_green, 10%);
 	}
-
 	&:active,
 	&:focus {
-		
+		background: darken($color_primary_green, 15%);
+		border: 1px solid darken($color_primary_green, 15%);
 	}
 }
 
-.btn-black-border{
+button.btn-black-border, 
+.btn-black-border, 
+a.btn-black-border {
 	padding: 12px 25px;
 	font-family: $font_accent;
 	text-transform: uppercase;
 	font-size: 1rem;
 	border: 1px solid black;
 	color: black;
-
+	background-color: white;
 	&:hover {
-		border: 0;
 		background: $color_primary_green;
 		color: white;
+		border: 1px solid $color_primary_green;
+	}
+	&:active,
+	&:focus {
+		background: darken($color_primary_green, 5%);
+		border: 1px solid darken($color_primary_green, 5%);
 	}
 }
 

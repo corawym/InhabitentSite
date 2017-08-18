@@ -404,6 +404,151 @@ table {
   width: 100%; }
 
 /*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/* Buttons */
+button.btn-green,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.btn-green,
+a.btn-green {
+  background: #248A83;
+  color: white;
+  padding: 12px 25px;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 1px solid #248A83; }
+  button.btn-green:hover,
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover,
+  .btn-green:hover,
+  a.btn-green:hover {
+    background: #19625d;
+    border: 1px solid #19625d; }
+  button.btn-green:active, button.btn-green:focus,
+  input[type="button"]:active,
+  input[type="button"]:focus,
+  input[type="reset"]:active,
+  input[type="reset"]:focus,
+  input[type="submit"]:active,
+  input[type="submit"]:focus,
+  .btn-green:active,
+  .btn-green:focus,
+  a.btn-green:active,
+  a.btn-green:focus {
+    background: #144d49;
+    border: 1px solid #144d49; }
+
+button.btn-black-border,
+.btn-black-border,
+a.btn-black-border {
+  padding: 12px 25px;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 1px solid black;
+  color: black;
+  background-color: white; }
+  button.btn-black-border:hover,
+  .btn-black-border:hover,
+  a.btn-black-border:hover {
+    background: #248A83;
+    color: white;
+    border: 1px solid #248A83; }
+  button.btn-black-border:active, button.btn-black-border:focus,
+  .btn-black-border:active,
+  .btn-black-border:focus,
+  a.btn-black-border:active,
+  a.btn-black-border:focus {
+    background: #1f7670;
+    border: 1px solid #1f7670; }
+
+/* Fields */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+textarea {
+  border: 1px solid #e1e1e1;
+  background-color: #f4f4f4;
+  width: 100%; }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus {
+    color: #111; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"] {
+  padding: 3px; }
+
+textarea {
+  padding-left: 3px;
+  width: 100%; }
+
+label {
+  font-family: "Novecento Sans Web", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 10px; }
+  label .required {
+    color: #d99054; }
+
+.site-header label {
+  display: inline-block;
+  margin-bottom: 0; }
+
+input[type="search"], textarea {
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  padding-left: 3px; }
+
+input[type="search"]::-webkit-input-placeholder {
+  color: #a1a1a1; }
+
+input[type="search"]:-ms-input-placeholder {
+  color: #a1a1a1; }
+
+input[type="search"]::placeholder {
+  color: #a1a1a1; }
+
+input:focus[type="search"]::-webkit-input-placeholder {
+  color: #cccccc; }
+
+input:focus[type="search"]:-ms-input-placeholder {
+  color: #cccccc; }
+
+input:focus[type="search"]::placeholder {
+  color: #cccccc; }
+
+.comment-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .comment-form .comment-form-comment, .comment-form .comment-form-url {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 15px 0; }
+  .comment-form .comment-form-author {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding-right: 10px;
+    margin: 15px 0; }
+  .comment-form .comment-form-email {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding-left: 10px;
+    margin: 15px 0; }
+
+/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
@@ -472,16 +617,16 @@ a {
     -ms-flex-align: center;
         align-items: center; }
     .site-header .container .site-branding {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; }
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%; }
       .site-header .container .site-branding .header-logo .logo {
         width: 50px;
         height: 33.25px;
         background-size: cover;
         background-image: url("../../images/inhabitent-logo-tent.svg"); }
     .site-header .container .main-navigation {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%;
+      -ms-flex-preferred-size: 80%;
+          flex-basis: 80%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: end;
@@ -494,13 +639,25 @@ a {
         margin-left: 20px; }
         .site-header .container .main-navigation .header-search fieldset {
           border: none;
-          margin-top: 4px; }
-          .site-header .container .main-navigation .header-search fieldset label {
-            display: none; }
-          .site-header .container .main-navigation .header-search fieldset button {
-            background-color: transparent;
+          height: 32px;
+          padding: 0; }
+          .site-header .container .main-navigation .header-search fieldset .search-submit {
             border: none;
-            color: #248A83; }
+            color: #248A83;
+            background-color: transparent;
+            line-height: 1.5rem;
+            height: 32px; }
+          .site-header .container .main-navigation .header-search fieldset .search-field {
+            display: none;
+            width: 100px;
+            border: none;
+            background-color: transparent;
+            font-family: "Novecento Sans Web", sans-serif;
+            text-transform: uppercase;
+            transition: width 4s ease-in; }
+          .site-header .container .main-navigation .header-search fieldset .search-field-focus {
+            width: 200px;
+            transition: width 4s ease-out; }
 
 /* Small menu. */
 .menu-toggle,
@@ -542,145 +699,6 @@ a {
 
 .search-pagination .current {
   background-color: #808080; }
-
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-/* Buttons */
-button.btn-green,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-.btn-green,
-a.btn-green {
-  background: #248A83;
-  color: white;
-  padding: 12px 25px;
-  font-family: "Novecento Sans Web", sans-serif;
-  text-transform: uppercase;
-  font-size: 1rem;
-  border: 1px solid #248A83; }
-  button.btn-green:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover,
-  .btn-green:hover,
-  a.btn-green:hover {
-    background: #19625d;
-    border: 1px solid #19625d; }
-  button.btn-green:active, button.btn-green:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus,
-  .btn-green:active,
-  .btn-green:focus,
-  a.btn-green:active,
-  a.btn-green:focus {
-    background: #144d49;
-    border: 1px solid #144d49; }
-
-button.btn-black-border,
-.btn-black-border,
-a.btn-black-border {
-  padding: 12px 25px;
-  font-family: "Novecento Sans Web", sans-serif;
-  text-transform: uppercase;
-  font-size: 1rem;
-  border: 1px solid black;
-  color: black;
-  background-color: white; }
-  button.btn-black-border:hover,
-  .btn-black-border:hover,
-  a.btn-black-border:hover {
-    background: #248A83;
-    color: white;
-    border: 1px solid #248A83; }
-  button.btn-black-border:active, button.btn-black-border:focus,
-  .btn-black-border:active,
-  .btn-black-border:focus,
-  a.btn-black-border:active,
-  a.btn-black-border:focus {
-    background: #1f7670;
-    border: 1px solid #1f7670; }
-
-/* Fields */
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-  border: 1px solid #e1e1e1;
-  background-color: #f4f4f4;
-  width: 100%; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
-  textarea:focus {
-    color: #111; }
-
-input[type="search"]::-webkit-input-placeholder {
-  color: #a1a1a1; }
-
-input[type="search"]:-ms-input-placeholder {
-  color: #a1a1a1; }
-
-input[type="search"]::placeholder {
-  color: #a1a1a1; }
-
-input:focus[type="search"]::-webkit-input-placeholder {
-  color: #cccccc; }
-
-input:focus[type="search"]:-ms-input-placeholder {
-  color: #cccccc; }
-
-input:focus[type="search"]::placeholder {
-  color: #cccccc; }
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-  padding: 3px; }
-
-textarea {
-  padding-left: 3px;
-  width: 100%; }
-
-label {
-  font-family: "Novecento Sans Web", sans-serif;
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  display: block;
-  margin-bottom: 10px; }
-  label .required {
-    color: #d99054; }
-
-.comment-form {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .comment-form .comment-form-comment, .comment-form .comment-form-url {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    margin: 15px 0; }
-  .comment-form .comment-form-author {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    padding-right: 10px;
-    margin: 15px 0; }
-  .comment-form .comment-form-email {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    padding-left: 10px;
-    margin: 15px 0; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1207,11 +1225,11 @@ also Category page, Tag page, Month archives page - post style*/
   border: none;
   margin-left: 0;
   padding-left: 0; }
-  .error404 .site-main .error-404 .search-form fieldset .search-field {
-    width: 200px; }
-
-.error404 .site-main .error-404 .search-form button {
-  display: none; }
+  .error404 .site-main .error-404 .search-form fieldset button {
+    display: none; }
+  .error404 .site-main .error-404 .search-form fieldset label .search-field {
+    width: 300px;
+    padding: 10px; }
 
 .error404 .site-main .error-404 .page-content .widget .widgettitle {
   font-weight: 700;

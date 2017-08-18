@@ -417,12 +417,15 @@ also Category page, Tag page, Month archives page - post style*/
           border: none;
           margin-left: 0;
           padding-left: 0;
-          .search-field{
-            width: 200px;
+          button{
+            display: none;  
           }
-        }
-        button{
-          display: none;
+          label{
+            .search-field{
+              width: 300px;
+              padding: 10px;
+            }
+          } 
         }
       }
       .page-content{

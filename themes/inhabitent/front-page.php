@@ -21,7 +21,7 @@ get_header(); ?>
         <div class="shop-blocks">
 
           <?php
-            $args = array( 'post_type' => 'product-type' );
+            $args = array( 'taxonomy' => 'product-type' );
             $all_product_types = get_terms( $args ); // returns an array of product types
           ?>
 

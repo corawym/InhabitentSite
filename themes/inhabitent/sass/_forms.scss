@@ -94,18 +94,8 @@ label{
 }
 
 // search bar 
-.site-header{
-	label{
-		display: inline-block;
-		margin-bottom: 0;
-	}
-}
 
-input[type="search"],textarea{
-	background-color: #f4f4f4;
-	border: $solid_border;
-	padding-left: 3px;
-}
+
 
 input[type="search"]::placeholder{
 	color: $color_primary_light_grey;
@@ -113,6 +103,31 @@ input[type="search"]::placeholder{
 input:focus[type="search"]::placeholder{
 	color: lighten($color_primary_light_grey, 17%);
 }
+
+
+.search-form{
+	fieldset{
+		border: none;
+		padding: 5px 0;
+		margin-left: 30px;
+		a.search-icon{
+			display: inline-block;
+		}
+		label{
+			display: inline-block;
+			margin: 0;
+			margin-left: 10px;
+			input[type="search"],textarea{
+				background-color: #f4f4f4;
+				border: $solid_border;
+				padding-left: 5px;	
+			}
+		}
+	}
+}
+
+
+
 
 // comment form
 .comment-form{

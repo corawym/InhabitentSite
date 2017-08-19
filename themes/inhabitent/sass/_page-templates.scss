@@ -423,19 +423,15 @@ also Category page, Tag page, Month archives page - post style*/
       }
       .search-form{
         fieldset{
-          border: none;
           margin-left: 0;
-          padding-left: 0;
-          button{
-            display: none;  
-          }
-          label{
-            .search-field{
-              width: 300px;
-              padding: 10px;
-            }
-          } 
         }
+        .search-icon{
+          display: none;
+        }
+        label{
+          margin-left: 0;
+        }
+        
       }
       .page-content{
         .widget{

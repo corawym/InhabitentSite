@@ -501,15 +501,6 @@ label {
   label .required {
     color: #d99054; }
 
-.site-header label {
-  display: inline-block;
-  margin-bottom: 0; }
-
-input[type="search"], textarea {
-  background-color: #f4f4f4;
-  border: 1px solid #e1e1e1;
-  padding-left: 3px; }
-
 input[type="search"]::-webkit-input-placeholder {
   color: #a1a1a1; }
 
@@ -527,6 +518,21 @@ input:focus[type="search"]:-ms-input-placeholder {
 
 input:focus[type="search"]::placeholder {
   color: #cccccc; }
+
+.search-form fieldset {
+  border: none;
+  padding: 5px 0;
+  margin-left: 30px; }
+  .search-form fieldset a.search-icon {
+    display: inline-block; }
+  .search-form fieldset label {
+    display: inline-block;
+    margin: 0;
+    margin-left: 10px; }
+    .search-form fieldset label input[type="search"], .search-form fieldset label textarea {
+      background-color: #f4f4f4;
+      border: 1px solid #e1e1e1;
+      padding-left: 5px; }
 
 .comment-form {
   display: -ms-flexbox;
@@ -635,29 +641,14 @@ a {
           align-items: center; }
       .site-header .container .main-navigation .menu-main-menu-container li {
         margin-left: 30px; }
-      .site-header .container .main-navigation .header-search {
-        margin-left: 20px; }
-        .site-header .container .main-navigation .header-search fieldset {
-          border: none;
-          height: 32px;
-          padding: 0; }
-          .site-header .container .main-navigation .header-search fieldset .search-submit {
-            border: none;
-            color: #248A83;
-            background-color: transparent;
-            line-height: 1.5rem;
-            height: 32px; }
-          .site-header .container .main-navigation .header-search fieldset .search-field {
-            display: none;
-            width: 100px;
-            border: none;
-            background-color: transparent;
-            font-family: "Novecento Sans Web", sans-serif;
-            text-transform: uppercase;
-            transition: width 4s ease-in; }
-          .site-header .container .main-navigation .header-search fieldset .search-field-focus {
-            width: 200px;
-            transition: width 4s ease-out; }
+      .site-header .container .main-navigation .header-search .search-form .search-field {
+        width: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        transition: width 0.5s ease-in; }
+      .site-header .container .main-navigation .header-search .search-form .search-field-focus {
+        width: 200px; }
 
 /* Small menu. */
 .menu-toggle,
@@ -1234,14 +1225,13 @@ also Category page, Tag page, Month archives page - post style*/
   line-height: 2.3rem; }
 
 .error404 .site-main .error-404 .search-form fieldset {
-  border: none;
-  margin-left: 0;
-  padding-left: 0; }
-  .error404 .site-main .error-404 .search-form fieldset button {
-    display: none; }
-  .error404 .site-main .error-404 .search-form fieldset label .search-field {
-    width: 300px;
-    padding: 10px; }
+  margin-left: 0; }
+
+.error404 .site-main .error-404 .search-form .search-icon {
+  display: none; }
+
+.error404 .site-main .error-404 .search-form label {
+  margin-left: 0; }
 
 .error404 .site-main .error-404 .page-content .widget .widgettitle {
   font-weight: 700;

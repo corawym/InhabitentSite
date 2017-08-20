@@ -529,7 +529,7 @@ input:focus[type="search"]::placeholder {
     display: inline-block;
     margin: 0;
     margin-left: 10px; }
-    .search-form fieldset label input[type="search"], .search-form fieldset label textarea {
+    .search-form fieldset label .search-field {
       background-color: #f4f4f4;
       border: 1px solid #e1e1e1;
       padding-left: 5px; }
@@ -648,7 +648,8 @@ a {
         background-color: transparent;
         transition: width 0.5s ease-in; }
       .site-header .container .main-navigation .header-search .search-form .search-field-focus {
-        width: 200px; }
+        width: 200px;
+        padding-left: 5px; }
 
 /* Small menu. */
 .menu-toggle,
@@ -829,6 +830,39 @@ a {
 .bypostauthor {
   display: block; }
 
+.comments-area .comments-title {
+  font-weight: 700; }
+
+.comments-area .comment-list {
+  margin-left: 0;
+  padding-left: 0; }
+  .comments-area .comment-list .comment {
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 50px; }
+  .comments-area .comment-list .comment-body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    padding-bottom: 30px; }
+  .comments-area .comment-list .comment-author-avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 64px;
+    height: 60px; }
+  .comments-area .comment-list .comment-content {
+    margin-left: 20px; }
+    .comments-area .comment-list .comment-content .comment-author cite {
+      font-weight: 700;
+      font-style: normal; }
+    .comments-area .comment-list .comment-content .comment-metadata {
+      color: #808080; }
+  .comments-area .comment-list .children > .comment {
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-top: 50px;
+    border-top: 1px solid #e1e1e1; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -959,6 +993,10 @@ also Category page, Tag page, Month archives page - post style*/
     margin-top: 40px; }
     .blog .post .entry-content p, .single-post .post .entry-content p, .archive .post .entry-content p {
       margin-bottom: 40px; }
+    .blog .post .entry-content a.btn-black-border, .single-post .post .entry-content a.btn-black-border, .archive .post .entry-content a.btn-black-border {
+      color: black; }
+      .blog .post .entry-content a.btn-black-border:hover, .single-post .post .entry-content a.btn-black-border:hover, .archive .post .entry-content a.btn-black-border:hover {
+        color: white; }
 
 /* Category page, Tag page, Month archives page, Search page - page header style*/
 .archive .site-main .page-header, .search .site-main .page-header {

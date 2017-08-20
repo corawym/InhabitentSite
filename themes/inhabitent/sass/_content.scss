@@ -47,3 +47,44 @@
 .bypostauthor {
 	display: block;
 }
+
+.comments-area{
+	.comments-title{
+		font-weight: 700;
+	}
+	.comment-list{
+		margin-left: 0;
+		padding-left: 0;
+		.comment{
+			border-bottom: $solid_border;
+			margin-bottom: 50px;
+		}
+		.comment-body{
+			display: flex;
+			flex-direction: row;
+			padding-bottom: 30px;
+		}
+		.comment-author-avatar{
+			border-radius: 50%;
+			overflow: hidden;
+			width: 64px;
+			height: 60px;
+		}
+		.comment-content{
+			margin-left: 20px;	
+			.comment-author cite{
+				font-weight: 700;
+				font-style: normal;
+			}	
+			.comment-metadata{
+				color: #808080;
+			}
+		}
+		.children > .comment{
+			border-bottom: none;
+			margin-bottom: 0px;
+			padding-top: 50px;
+			border-top: $solid_border;
+		}
+	}
+}

@@ -95,8 +95,6 @@ label{
 
 // search bar 
 
-
-
 input[type="search"]::placeholder{
 	color: $color_primary_light_grey;
 }
@@ -117,7 +115,8 @@ input:focus[type="search"]::placeholder{
 			display: inline-block;
 			margin: 0;
 			margin-left: 10px;
-			input[type="search"],textarea{
+			// input[type="search"],textarea{
+			.search-field{
 				background-color: #f4f4f4;
 				border: $solid_border;
 				padding-left: 5px;	

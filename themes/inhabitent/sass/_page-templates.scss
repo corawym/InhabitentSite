@@ -93,6 +93,12 @@ also Category page, Tag page, Month archives page - post style*/
       p{
         margin-bottom: 40px;
       }
+      a.btn-black-border{
+        color: black;
+        &:hover{
+          color: white;
+        }
+      }
     } // end of .entry-content
   } // end of .post
 } // end of .blog, .single-post
@@ -482,3 +488,4 @@ also Category page, Tag page, Month archives page - post style*/
     }
   }
 }
+

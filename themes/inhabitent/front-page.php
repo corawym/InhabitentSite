@@ -73,6 +73,37 @@ get_header(); ?>
       
       <section class="front-page-adventures">
         <h2>Latest Adventures</h2>
+
+        <div class="adventures-blocks">
+
+          <?php
+            $args = array( 
+              'post_type' => 'adventure', 
+              'posts_per_page' => 4, 
+              'orderby' => 'date',
+              'order' => 'ASC'
+              );
+            $latest_adventure_posts = get_posts( $args ); // returns an array of posts
+          ?>
+
+          <?php foreach ( $latest_adventure_posts as $post ) : setup_postdata( $post ); ?>
+            
+            <article class="adventures-blocks-wrapper">
+              <div class="adventure-blocks-thumbnail">
+                <?php if ( has_post_thumbnail() ) : ?>
+                  <?php the_post_thumbnail( 'large' ); ?>
+                <?php endif; ?>
+              </div>
+
+              <div class="adventures-blocks-info">
+                <?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+                <a class="btn-black-border" href=<?php echo get_permalink() ?>>read more</a>    
+              </div><!-- .journals-blocks-info -->
+            </article><!-- .journals-blocks-wrapper -->
+
+          <?php endforeach; wp_reset_postdata(); ?>
+
+
       </section><!-- .front-page-adventures -->
 
 

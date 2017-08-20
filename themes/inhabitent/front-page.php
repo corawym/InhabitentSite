@@ -89,20 +89,23 @@ get_header(); ?>
           <?php foreach ( $latest_adventure_posts as $post ) : setup_postdata( $post ); ?>
             
             <article class="adventures-blocks-wrapper">
-              <div class="adventure-blocks-thumbnail">
-                <?php if ( has_post_thumbnail() ) : ?>
-                  <?php the_post_thumbnail( 'large' ); ?>
-                <?php endif; ?>
-              </div>
+              <?php if ( has_post_thumbnail() ) : ?>
+                <?php the_post_thumbnail( 'large' ); ?>
+              <?php endif; ?>
 
               <div class="adventures-blocks-info">
                 <?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
-                <a class="btn-black-border" href=<?php echo get_permalink() ?>>read more</a>    
+                <a class="btn-white-border" href=<?php echo get_permalink() ?>>read more</a>    
               </div><!-- .journals-blocks-info -->
             </article><!-- .journals-blocks-wrapper -->
 
           <?php endforeach; wp_reset_postdata(); ?>
+        
+        </div><!-- .adventures-blocks -->
 
+        <p>
+          <a class="btn-green btn-more-adventure" href=<?php echo get_post_type_archive_link( 'adventure' ) ?>>more adventure</a>
+        </p>
 
       </section><!-- .front-page-adventures -->
 

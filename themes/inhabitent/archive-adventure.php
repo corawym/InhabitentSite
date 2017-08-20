@@ -34,9 +34,7 @@ get_header(); ?>
             <?php endif; ?>
 
               <div class="adventure-item-info">
-                <a class="adventure-title-link" href=<?php echo get_permalink() ?>>
-                  <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-                <a>
+                <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
                 <a class="btn-white-border" href=<?php echo get_permalink() ?>>read more</a>
               </div>
 

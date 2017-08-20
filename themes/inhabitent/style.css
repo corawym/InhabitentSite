@@ -1181,11 +1181,112 @@ also Category page, Tag page, Month archives page - post style*/
           .home .site-content .front-page-shop .journals-blocks .journals-blocks-wrapper .journals-blocks-info a,
           .home .site-content .front-page-latest-journals .journals-blocks .journals-blocks-wrapper .journals-blocks-info a,
           .home .site-content .front-page-adventures .journals-blocks .journals-blocks-wrapper .journals-blocks-info a {
-            color: black; }
+            color: #248A83; }
             .home .site-content .front-page-shop .journals-blocks .journals-blocks-wrapper .journals-blocks-info a:hover,
             .home .site-content .front-page-latest-journals .journals-blocks .journals-blocks-wrapper .journals-blocks-info a:hover,
             .home .site-content .front-page-adventures .journals-blocks .journals-blocks-wrapper .journals-blocks-info a:hover {
-              color: white; }
+              color: #2f1339; }
+    .home .site-content .front-page-shop .adventures-blocks,
+    .home .site-content .front-page-latest-journals .adventures-blocks,
+    .home .site-content .front-page-adventures .adventures-blocks {
+      -ms-grid-columns: 1fr 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+      -ms-grid-rows: 1fr 1fr;
+          grid-template-rows: 1fr 1fr; }
+      .home .site-content .front-page-shop .adventures-blocks .adventures-blocks-wrapper img,
+      .home .site-content .front-page-latest-journals .adventures-blocks .adventures-blocks-wrapper img,
+      .home .site-content .front-page-adventures .adventures-blocks .adventures-blocks-wrapper img {
+        display: block; }
+      .home .site-content .front-page-shop .adventures-blocks .adventures-blocks-info h3,
+      .home .site-content .front-page-latest-journals .adventures-blocks .adventures-blocks-info h3,
+      .home .site-content .front-page-adventures .adventures-blocks .adventures-blocks-info h3 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        margin: 20px 0; }
+      .home .site-content .front-page-shop .adventures-blocks .adventures-blocks-wrapper:nth-child(1),
+      .home .site-content .front-page-latest-journals .adventures-blocks .adventures-blocks-wrapper:nth-child(1),
+      .home .site-content .front-page-adventures .adventures-blocks .adventures-blocks-wrapper:nth-child(1) {
+        -ms-grid-row: span 2;
+            grid-row-start: span 2;
+        -ms-grid-column: span 2;
+            grid-column-start: span 2;
+        height: 552.5px; }
+        .home .site-content .front-page-shop .adventures-blocks .adventures-blocks-wrapper:nth-child(1) img,
+        .home .site-content .front-page-latest-journals .adventures-blocks .adventures-blocks-wrapper:nth-child(1) img,
+        .home .site-content .front-page-adventures .adventures-blocks .adventures-blocks-wrapper:nth-child(1) img {
+          height: 552.5px; }
+      .home .site-content .front-page-shop .adventures-blocks .adventures-blocks-wrapper:nth-child(2),
+      .home .site-content .front-page-latest-journals .adventures-blocks .adventures-blocks-wrapper:nth-child(2),
+      .home .site-content .front-page-adventures .adventures-blocks .adventures-blocks-wrapper:nth-child(2) {
+        -ms-grid-column: span 2;
+            grid-column-start: span 2;
+        height: 268.75px; }
+        .home .site-content .front-page-shop .adventures-blocks .adventures-blocks-wrapper:nth-child(2) img,
+        .home .site-content .front-page-latest-journals .adventures-blocks .adventures-blocks-wrapper:nth-child(2) img,
+        .home .site-content .front-page-adventures .adventures-blocks .adventures-blocks-wrapper:nth-child(2) img {
+          height: 268.75px; }
+      .home .site-content .front-page-shop .adventures-blocks .adventures-blocks-wrapper:nth-child(3),
+      .home .site-content .front-page-latest-journals .adventures-blocks .adventures-blocks-wrapper:nth-child(3),
+      .home .site-content .front-page-adventures .adventures-blocks .adventures-blocks-wrapper:nth-child(3) {
+        height: 268.75px; }
+        .home .site-content .front-page-shop .adventures-blocks .adventures-blocks-wrapper:nth-child(3) img,
+        .home .site-content .front-page-latest-journals .adventures-blocks .adventures-blocks-wrapper:nth-child(3) img,
+        .home .site-content .front-page-adventures .adventures-blocks .adventures-blocks-wrapper:nth-child(3) img {
+          height: 268.75px; }
+        .home .site-content .front-page-shop .adventures-blocks .adventures-blocks-wrapper:nth-child(3) .adventures-blocks-info h3,
+        .home .site-content .front-page-latest-journals .adventures-blocks .adventures-blocks-wrapper:nth-child(3) .adventures-blocks-info h3,
+        .home .site-content .front-page-adventures .adventures-blocks .adventures-blocks-wrapper:nth-child(3) .adventures-blocks-info h3 {
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+          margin: 20px 0; }
+      .home .site-content .front-page-shop .adventures-blocks .adventures-blocks-wrapper:nth-child(4),
+      .home .site-content .front-page-latest-journals .adventures-blocks .adventures-blocks-wrapper:nth-child(4),
+      .home .site-content .front-page-adventures .adventures-blocks .adventures-blocks-wrapper:nth-child(4) {
+        height: 268.75px; }
+        .home .site-content .front-page-shop .adventures-blocks .adventures-blocks-wrapper:nth-child(4) img,
+        .home .site-content .front-page-latest-journals .adventures-blocks .adventures-blocks-wrapper:nth-child(4) img,
+        .home .site-content .front-page-adventures .adventures-blocks .adventures-blocks-wrapper:nth-child(4) img {
+          height: 268.75px; }
+        .home .site-content .front-page-shop .adventures-blocks .adventures-blocks-wrapper:nth-child(4) .adventures-blocks-info h3,
+        .home .site-content .front-page-latest-journals .adventures-blocks .adventures-blocks-wrapper:nth-child(4) .adventures-blocks-info h3,
+        .home .site-content .front-page-adventures .adventures-blocks .adventures-blocks-wrapper:nth-child(4) .adventures-blocks-info h3 {
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+          margin: 20px 0; }
+  .home .site-content .btn-more-adventure {
+    color: white; }
+  .home .site-content .front-page-adventures {
+    margin-bottom: 100px; }
+
+.adventures-blocks, .adventure-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 7px; }
+
+.adventures-blocks-wrapper, .adventure-grid-item {
+  position: relative; }
+  .adventures-blocks-wrapper a, .adventure-grid-item a {
+    display: inline-block; }
+  .adventures-blocks-wrapper img, .adventure-grid-item img {
+    display: inline-block;
+    object-fit: cover;
+    width: 100%;
+    filter: contrast(80%) brightness(70%); }
+
+.adventures-blocks-info, .adventure-item-info {
+  position: absolute;
+  top: 0;
+  margin: 25px; }
+  .adventures-blocks-info .entry-title a, .adventure-item-info .entry-title a {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    text-transform: none;
+    color: white; }
+    .adventures-blocks-info .entry-title a:hover, .adventure-item-info .entry-title a:hover {
+      color: #f0e4d1; }
+  .adventures-blocks-info .btn-white-border, .adventure-item-info .btn-white-border {
+    color: white; }
 
 /* Shop page, Single product page, Adventure page*/
 .post-type-archive-product .site-content, .single-product .site-content, .tax-product-type .site-content, .post-type-archive-adventure .site-content {
@@ -1347,35 +1448,11 @@ also Category page, Tag page, Month archives page - post style*/
   padding-bottom: 20px; }
 
 .post-type-archive-adventure .content-area .adventure-grid {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 15px;
-  margin-bottom: 30px;
-  grid-row-gap: 15px; }
-  .post-type-archive-adventure .content-area .adventure-grid .adventure-grid-item {
-    position: relative; }
-    .post-type-archive-adventure .content-area .adventure-grid .adventure-grid-item a {
-      display: inline-block; }
-    .post-type-archive-adventure .content-area .adventure-grid .adventure-grid-item img {
-      object-fit: cover;
-      width: 100%;
-      height: 552.5px;
-      filter: contrast(80%) brightness(60%); }
-  .post-type-archive-adventure .content-area .adventure-grid .adventure-item-info {
-    position: absolute;
-    top: 10px;
-    margin: 25px; }
-    .post-type-archive-adventure .content-area .adventure-grid .adventure-item-info h2 {
-      font-family: "Merriweather", serif;
-      text-transform: none;
-      color: white;
-      line-height: 3rem; }
-      .post-type-archive-adventure .content-area .adventure-grid .adventure-item-info h2:hover {
-        color: #f0e4d1; }
-  .post-type-archive-adventure .content-area .adventure-grid .btn-white-border {
-    color: white; }
+  margin-bottom: 30px; }
+  .post-type-archive-adventure .content-area .adventure-grid .adventure-grid-item img {
+    height: 552.5px; }
 
 /* Single adventure page */
 .single-adventure .site-content {

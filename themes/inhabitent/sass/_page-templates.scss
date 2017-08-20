@@ -6,7 +6,7 @@
 body{
   // for .blog, .single-post .page .error404, .search-results
   // = pages without sidebar
-  &:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type):not(.post-type-archive-adventure) {
+  &:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type):not(.post-type-archive-adventure):not(.single-adventure) {
     .site-content{
       width: 1120px;
       margin: 0 auto;
@@ -294,7 +294,7 @@ also Category page, Tag page, Month archives page - post style*/
   }
 }
 
-// Shop page style
+/* Shop page style */
 .post-type-archive-product, .tax-product-type{
   .site-main{
     .page-header{
@@ -375,7 +375,7 @@ also Category page, Tag page, Month archives page - post style*/
 } // end of .post-type-archive-product
 
 
-// Single product page style
+/* Single product page style */
 .single-product{
   article{
     display: grid;
@@ -405,7 +405,7 @@ also Category page, Tag page, Month archives page - post style*/
 } // end of .single-product
 
 // social button style
-.single-product, .single-post{
+.single-product, .single-post, .single-adventure{
   .social-button{
     margin-top: 50px;
     button{
@@ -417,7 +417,7 @@ also Category page, Tag page, Month archives page - post style*/
 }
 
 
-// error 404 page
+/* error 404 page */
 .error404{
   .site-main{
     .error-404{
@@ -467,7 +467,7 @@ also Category page, Tag page, Month archives page - post style*/
 } // end of .error404
 
 
-// Search page
+/* Search page */
 .search{
   .site-main{
     article{
@@ -491,7 +491,7 @@ also Category page, Tag page, Month archives page - post style*/
   }
 }
 
-// Adventure page
+/* Adventure page */
 .post-type-archive-adventure{
   .content-area{
     .page-header{
@@ -537,3 +537,27 @@ also Category page, Tag page, Month archives page - post style*/
     }
   }
 } // end of .post-type-archive-adventure
+
+/* Single adventure page */
+.single-adventure{
+  .site-content{
+    margin-bottom: 80px;
+  }
+  img.single-adventure-image{
+    height:100vh;
+    width: 100vw;
+  }
+  .single-adventure-content{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 60px;
+    h1{
+      font-size: 2.7rem;
+      line-height: 3rem;
+    }
+    h2{
+      font-size: 1.2rem;
+      color: black;
+    }
+  }
+}

@@ -957,17 +957,17 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type):not(.post-type-archive-adventure) .site-content {
+body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type):not(.post-type-archive-adventure):not(.single-adventure) .site-content {
   width: 1120px;
   margin: 0 auto;
   padding-top: 50px;
   display: -ms-flexbox;
   display: flex; }
-  body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type):not(.post-type-archive-adventure) .site-content .content-area {
+  body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type):not(.post-type-archive-adventure):not(.single-adventure) .site-content .content-area {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
     padding: 60px 50px 60px 0; }
-  body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type):not(.post-type-archive-adventure) .site-content .widget-area {
+  body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type):not(.post-type-archive-adventure):not(.single-adventure) .site-content .widget-area {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
     padding-top: 20px;
@@ -1196,6 +1196,7 @@ also Category page, Tag page, Month archives page - post style*/
     padding-top: 60px;
     padding-bottom: 60px; }
 
+/* Shop page style */
 .post-type-archive-product .site-main .page-header, .tax-product-type .site-main .page-header {
   text-align: center;
   border-bottom: 1px dashed #c8c8c8;
@@ -1259,6 +1260,7 @@ also Category page, Tag page, Month archives page - post style*/
         padding-right: 20px;
         padding-left: 5px; }
 
+/* Single product page style */
 .single-product article {
   display: -ms-grid;
   display: grid;
@@ -1280,13 +1282,14 @@ also Category page, Tag page, Month archives page - post style*/
       margin-top: 20px;
       margin-bottom: 20px; }
 
-.single-product .social-button, .single-post .social-button {
+.single-product .social-button, .single-post .social-button, .single-adventure .social-button {
   margin-top: 50px; }
-  .single-product .social-button button, .single-post .social-button button {
+  .single-product .social-button button, .single-post .social-button button, .single-adventure .social-button button {
     height: 45px;
     padding-top: 9px;
     margin-right: 10px; }
 
+/* error 404 page */
 .error404 .site-main .error-404 .page-header h1 {
   font-size: 2.3rem;
   margin-top: 0;
@@ -1316,6 +1319,7 @@ also Category page, Tag page, Month archives page - post style*/
     font-family: "Merriweather", serif;
     text-transform: none; }
 
+/* Search page */
 .search .site-main article {
   margin-bottom: 80px; }
   .search .site-main article .entry-header h2 {
@@ -1330,6 +1334,7 @@ also Category page, Tag page, Month archives page - post style*/
     margin-bottom: 50px;
     border-bottom: 1px solid #e1e1e1; }
 
+/* Adventure page */
 .post-type-archive-adventure .content-area .page-header {
   text-align: center;
   border-bottom: 1px dashed #c8c8c8;
@@ -1365,6 +1370,25 @@ also Category page, Tag page, Month archives page - post style*/
         color: #f0e4d1; }
   .post-type-archive-adventure .content-area .adventure-grid .btn-white-border {
     color: white; }
+
+/* Single adventure page */
+.single-adventure .site-content {
+  margin-bottom: 80px; }
+
+.single-adventure img.single-adventure-image {
+  height: 100vh;
+  width: 100vw; }
+
+.single-adventure .single-adventure-content {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 60px; }
+  .single-adventure .single-adventure-content h1 {
+    font-size: 2.7rem;
+    line-height: 3rem; }
+  .single-adventure .single-adventure-content h2 {
+    font-size: 1.2rem;
+    color: black; }
 
 /*--------------------------------------------------------------
 # Footer

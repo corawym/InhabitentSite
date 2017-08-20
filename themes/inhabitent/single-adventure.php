@@ -16,7 +16,7 @@ get_header(); ?>
 
 					<div class="single-adventure-image">
 						<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail( 'large' ); ?>
+							<?php the_post_thumbnail( 'full' ); ?>
 						<?php endif; ?>
 					</div><!-- .single-product-image -->
 

@@ -94,7 +94,7 @@ function inhabitent_scripts() {
 	wp_enqueue_script( 'inhabitent-script', get_template_directory_uri() . '/build/js/script.min.js', array('jquery'), '1.0.0', true );
 	
 
-	if ( is_front_page() || is_page( 'about' ) ){
+	if ( is_front_page() || is_page( 'about' ) || is_singular( 'adventure' ) ){
 		wp_enqueue_script( 'inhabitent-site-header', get_template_directory_uri() . '/build/js/site-header.min.js', array('jquery'), '1.0.0', true );
 	}
 

@@ -1,5 +1,6 @@
 (function($){
 
+  // site-header search-toggle function
   $( '.search-icon' ).click(function() {
     // event.preventDefault();
     $('.search-field').toggleClass('search-field-focus');
@@ -12,4 +13,7 @@
     }
   });
 
+  
+
 })(jQuery);
+

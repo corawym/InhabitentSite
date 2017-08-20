@@ -98,7 +98,7 @@ a {
 	}
 }
 
-// inhabitent main menu 
+// inhabitent main menu - green
 .site-header{
 	background-color: rgba(255, 255, 255, 0.9);
 	border-bottom: $solid_border;
@@ -142,68 +142,56 @@ a {
 						border: none;
 						background-color: transparent;
 						transition: width 0.5s ease-in;
-						
 					}
 					.search-field-focus{
 						width: 200px;
 						padding-left: 5px;
 					}
 				}
-			}
-			// .header-search{
+			} // end of .header-search
 
-			// 	margin-left: 15px;
-
-			// 	.search-form{
-
-
-			// 		fieldset{
-
-			// 		}
-				
-			// 	}
-			// }
-			
-			// .header-search{
-			// 	margin-left: 20px;
-
-				
-			// 		.search-icon{
-			// 			border: none;
-			// 			color: $color_primary_green;
-			// 			background-color: transparent;
-			// 			line-height: 1.5rem;
-			// 			height: 32px;
-			// 			width: 50px;
-			// 			display: flex;
-			// 			align-items: center;
-			// 			margin-right: 0;
-			// 		}
-			// 		label{
-			// 			display: none;
-			// 			.search-field{
-			// 				width: 0px;
-			// 				border: none;
-			// 				background-color: transparent;
-			// 				font-family: $font_accent;
-			// 				text-transform: uppercase;
-			// 				
-			// 			}
-			// 			.search-field-focus{
-			// 				width: 200px;
-			// 			}
-			// 		}
 					
-			// 		// .search-field-case{
-			// 		// 	text-transform: none;
-			// 		// }
-				
-				
-			
 		} // end of .main-navigation
 	} // end of .container
 } // end of .site-header
 
+
+// inhabitent main menu - yellow and white
+.site-header-white{
+	background-color: transparent;
+	border-bottom: none;
+	.container{
+		.site-branding{
+			.header-logo{
+				.logo{
+					width: 50px;
+					height: 33.25px;
+					background-size: cover;
+					background-image: url("../../images/inhabitent-logo-tent-white.svg");
+				}			
+			}
+		} // end of .site-branding
+	}
+	.main-navigation{
+		.menu-main-menu-container a{
+			color: white;
+		}
+		.header-search{
+			.search-form{
+				.fa-search{
+					color: white;
+				}
+			} 
+			label{
+				.search-field{
+					color: $color_primary_yellow;
+				}
+
+			}
+		}
+	}
+					
+}
 
 
 /* Small menu. */

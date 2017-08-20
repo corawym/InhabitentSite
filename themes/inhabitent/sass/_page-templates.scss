@@ -2,9 +2,11 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+// Global - pages with sidebar
 body{
-
-  &:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type) {
+  // for .blog, .single-post .page .error404, .search-results
+  // = pages without sidebar
+  &:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type):not(.post-type-archive-adventure) {
     .site-content{
       width: 1120px;
       margin: 0 auto;
@@ -21,11 +23,9 @@ body{
         padding-top: 20px;
         padding-left: 60px;
         border-left: $solid_border;
-      }
-    
+      }  
     } // end of .site-content 
-  }// for .blog, .single-post .page .error404, .search-results
-      
+  }   
 } // end of body
 
 
@@ -278,9 +278,11 @@ also Category page, Tag page, Month archives page - post style*/
     } 
   } // end of .site-content
 } // end of .home
-  
-/* Shop page, Single product page*/
-.post-type-archive-product, .single-product, .tax-product-type{
+
+
+// Global - pages without sidebar
+/* Shop page, Single product page, Adventure page*/
+.post-type-archive-product, .single-product, .tax-product-type, .post-type-archive-adventure{
   .site-content{
     width: 1120px;
     margin: 0 auto;
@@ -489,3 +491,49 @@ also Category page, Tag page, Month archives page - post style*/
   }
 }
 
+// Adventure page
+.post-type-archive-adventure{
+  .content-area{
+    .page-header{
+      text-align: center;
+      border-bottom: $dashed_border;
+      padding-bottom: 20px;
+    }
+    .adventure-grid{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 15px;
+      margin-bottom: 30px;
+      grid-row-gap: 15px;
+      .adventure-grid-item{
+        position: relative;
+        a{
+          display: inline-block;
+        }
+        img{
+          object-fit: cover;
+          width: 100%;
+          height: 552.5px;  
+          filter: contrast(80%) brightness(60%);
+        }
+      }
+      .adventure-item-info{
+        position: absolute;
+        top: 10px;
+        margin: 25px;
+        h2{
+          font-family: $font__main;
+          text-transform: none;
+          color: white;
+          line-height: 3rem;
+          &:hover{
+            color: $color_primary_yellow;
+          } 
+        }
+      }
+      .btn-white-border{
+        color: white;
+      }
+    }
+  }
+} // end of .post-type-archive-adventure

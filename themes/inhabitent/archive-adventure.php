@@ -28,17 +28,18 @@ get_header(); ?>
 
             <div class="adventure-grid-item">
 
-              <?php if ( has_post_thumbnail() ) : ?>
-              <div class="adventure-item-thumbnail">
-                <a href=<?php echo get_post_permalink() ?>><?php the_post_thumbnail( 'large' ); ?></a>
-              </div>
-              <?php endif; ?>
+            <?php if ( has_post_thumbnail() ) : ?>
+              <a href=<?php echo get_post_permalink() ?>><?php the_post_thumbnail( 'large' ); ?></a>
+            
+            <?php endif; ?>
 
               <div class="adventure-item-info">
-                <div class="line"></div>
-                <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-                <a class="btn-black-border" href=<?php echo get_permalink() ?>>read more</a>
+                <a class="adventure-title-link" href=<?php echo get_permalink() ?>>
+                  <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+                <a>
+                <a class="btn-white-border" href=<?php echo get_permalink() ?>>read more</a>
               </div>
+
 
             </div><!-- .product-grid-item -->
 

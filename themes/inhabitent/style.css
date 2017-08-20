@@ -466,6 +466,22 @@ a.btn-black-border {
     background: #1f7670;
     border: 1px solid #1f7670; }
 
+a.btn-white-border {
+  padding: 12px 25px;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent; }
+  a.btn-white-border:hover {
+    background: #248A83;
+    color: white;
+    border: 1px solid #248A83; }
+  a.btn-white-border:active, a.btn-white-border:focus {
+    background: #1f7670;
+    border: 1px solid #1f7670; }
+
 /* Fields */
 input[type="text"],
 input[type="email"],
@@ -941,17 +957,17 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type) .site-content {
+body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type):not(.post-type-archive-adventure) .site-content {
   width: 1120px;
   margin: 0 auto;
   padding-top: 50px;
   display: -ms-flexbox;
   display: flex; }
-  body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type) .site-content .content-area {
+  body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type):not(.post-type-archive-adventure) .site-content .content-area {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
     padding: 60px 50px 60px 0; }
-  body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type) .site-content .widget-area {
+  body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.tax-product-type):not(.post-type-archive-adventure) .site-content .widget-area {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
     padding-top: 20px;
@@ -1171,12 +1187,12 @@ also Category page, Tag page, Month archives page - post style*/
             .home .site-content .front-page-adventures .journals-blocks .journals-blocks-wrapper .journals-blocks-info a:hover {
               color: white; }
 
-/* Shop page, Single product page*/
-.post-type-archive-product .site-content, .single-product .site-content, .tax-product-type .site-content {
+/* Shop page, Single product page, Adventure page*/
+.post-type-archive-product .site-content, .single-product .site-content, .tax-product-type .site-content, .post-type-archive-adventure .site-content {
   width: 1120px;
   margin: 0 auto;
   padding-top: 50px; }
-  .post-type-archive-product .site-content .content-area, .single-product .site-content .content-area, .tax-product-type .site-content .content-area {
+  .post-type-archive-product .site-content .content-area, .single-product .site-content .content-area, .tax-product-type .site-content .content-area, .post-type-archive-adventure .site-content .content-area {
     padding-top: 60px;
     padding-bottom: 60px; }
 
@@ -1313,6 +1329,42 @@ also Category page, Tag page, Month archives page - post style*/
     padding-bottom: 50px;
     margin-bottom: 50px;
     border-bottom: 1px solid #e1e1e1; }
+
+.post-type-archive-adventure .content-area .page-header {
+  text-align: center;
+  border-bottom: 1px dashed #c8c8c8;
+  padding-bottom: 20px; }
+
+.post-type-archive-adventure .content-area .adventure-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  margin-bottom: 30px;
+  grid-row-gap: 15px; }
+  .post-type-archive-adventure .content-area .adventure-grid .adventure-grid-item {
+    position: relative; }
+    .post-type-archive-adventure .content-area .adventure-grid .adventure-grid-item a {
+      display: inline-block; }
+    .post-type-archive-adventure .content-area .adventure-grid .adventure-grid-item img {
+      object-fit: cover;
+      width: 100%;
+      height: 552.5px;
+      filter: contrast(80%) brightness(60%); }
+  .post-type-archive-adventure .content-area .adventure-grid .adventure-item-info {
+    position: absolute;
+    top: 10px;
+    margin: 25px; }
+    .post-type-archive-adventure .content-area .adventure-grid .adventure-item-info h2 {
+      font-family: "Merriweather", serif;
+      text-transform: none;
+      color: white;
+      line-height: 3rem; }
+      .post-type-archive-adventure .content-area .adventure-grid .adventure-item-info h2:hover {
+        color: #f0e4d1; }
+  .post-type-archive-adventure .content-area .adventure-grid .btn-white-border {
+    color: white; }
 
 /*--------------------------------------------------------------
 # Footer

@@ -50,6 +50,26 @@ a.btn-black-border {
 	}
 }
 
+a.btn-white-border{
+	padding: 12px 25px;
+	font-family: $font_accent;
+	text-transform: uppercase;
+	font-size: 1rem;
+	border: 1px solid white;
+	color: white;
+	background-color: transparent;
+	&:hover {
+		background: $color_primary_green;
+		color: white;
+		border: 1px solid $color_primary_green;
+	}
+	&:active,
+	&:focus {
+		background: darken($color_primary_green, 5%);
+		border: 1px solid darken($color_primary_green, 5%);
+	}
+}
+
 
 /* Fields */
 

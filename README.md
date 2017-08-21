@@ -35,6 +35,5 @@ It is a multi-page website with a blog for a camping supply company called Inhab
 ### Screenshot
 <img src="https://user-images.githubusercontent.com/6543823/29499921-fe1fb5f2-85cf-11e7-8c65-7394c810a47a.png">
 (Front page)
-<img src="https://user-images.githubusercontent.com/6543823/29500075-e4f07290-85d1-11e7-9d0e-4a067c9d0ef5.png">
-(Single post page)
+
 

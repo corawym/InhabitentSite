@@ -142,6 +142,7 @@ a {
 						border: none;
 						background-color: transparent;
 						transition: width 0.5s ease-in;
+						font-family: sans-serif;
 					}
 					.search-field-focus{
 						width: 200px;
@@ -175,11 +176,17 @@ a {
 	.main-navigation{
 		.menu-main-menu-container a{
 			color: white;
+			&:hover{
+				color: $color_primary_yellow;
+			}
 		}
 		.header-search{
 			.search-form{
 				.fa-search{
 					color: white;
+					&:hover{
+						color: $color_primary_yellow;
+					}
 				}
 			} 
 			label{

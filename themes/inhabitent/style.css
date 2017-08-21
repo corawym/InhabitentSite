@@ -662,7 +662,8 @@ a {
         padding: 0;
         border: none;
         background-color: transparent;
-        transition: width 0.5s ease-in; }
+        transition: width 0.5s ease-in;
+        font-family: sans-serif; }
       .site-header .container .main-navigation .header-search .search-form .search-field-focus {
         width: 200px;
         padding-left: 5px; }
@@ -677,8 +678,12 @@ a {
     background-image: url("../../images/inhabitent-logo-tent-white.svg"); }
   .site-header-white .main-navigation .menu-main-menu-container a {
     color: white; }
+    .site-header-white .main-navigation .menu-main-menu-container a:hover {
+      color: #f0e4d1; }
   .site-header-white .main-navigation .header-search .search-form .fa-search {
     color: white; }
+    .site-header-white .main-navigation .header-search .search-form .fa-search:hover {
+      color: #f0e4d1; }
   .site-header-white .main-navigation .header-search label .search-field {
     color: #f0e4d1; }
 

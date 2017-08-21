@@ -1,4 +1,4 @@
-# RED Functionality Plugin
+# Inhabitent Functionality Plugin
 
 A WordPress functionality plugin theme for Inhabitent Camping Supply Co. 
 

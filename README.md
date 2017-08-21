@@ -33,7 +33,7 @@ It is a multi-page website with a blog for a camping supply company called Inhab
 - Use Sass to keep things organized and neat
 
 ### Screenshot
-<img src="https://user-images.githubusercontent.com/6543823/29499921-fe1fb5f2-85cf-11e7-8c65-7394c810a47a.png">
+<img src="https://user-images.githubusercontent.com/6543823/29499921-fe1fb5f2-85cf-11e7-8c65-7394c810a47a.png" alt="Inhabitent's front page screenshot">
 (Front page)
 
 
